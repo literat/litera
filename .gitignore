@@ -1,3 +1,4 @@
+app/bin/*
 app/temp/*
 vendor/*
 !vendor/others
