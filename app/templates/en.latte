@@ -9,24 +9,24 @@
 				<span class="fa fa-bars color-white"></span>
 			</button>
 			<h1>
-				<a class="navbar-brand" href="/" data-0="line-height:90px;" data-300="line-height:50px;"><!--Thomas Litera--></a>
+				<a class="navbar-brand" href="{$basePath}" title="Home" data-0="line-height:90px;" data-300="line-height:50px;"><!--Thomas Litera--></a>
 			</h1>
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
-				<li class="active"><a href="{$basePath}">Home</a></li>
-				<li><a href="#section-about">About Me</a></li>
-				<li><a href="#section-cv">CV</a></li>
-				<li><a href="#section-works">Portfolio</a></li>
-				<li><a href="#section-contact">Contact</a></li>
-				<li><a href="{$basePath}/cs">CS</a></li>
+				<li class="active"><a href="{$basePath}" title="Home">Home</a></li>
+				<li><a href="#about" title="About me">About Me</a></li>
+				<li><a href="#cv" title="Curiculum Vitae">CV</a></li>
+				<li><a href="#works" title="Works">Portfolio</a></li>
+				<li><a href="#contact" title="Contact">Contact</a></li>
+				<li><a href="{$basePath}/cs" title="Česká verze">CS</a></li>
 			</ul>
 		</div><!--/.navbar-collapse -->
 	</div>
 </div>
 
 <section id="opening" class="featured">
-	<div class="container"> 
+	<div class="container">
 		<div class="row mar-bot40">
 			<div class="col-md-6 col-md-offset-1">
 				<div>
@@ -34,7 +34,48 @@
 					<h2 class="slogan">Thomas Litera</h2>
 					<p>
 						that is my name. <strong>Hello everybody!</strong> I am Web Developer and Web Designer from Kolin. Actually I am working and studying in Prague, The Capital city.
-					</p>	
+					</p>
+					<h4>student project</h4>
+					<p>This web page is semestral project of Webdesign lecture on Czech university of Life sciences.</p>
+					<p>This web page is valid:</p>
+					<ul class="project-status">
+						<li><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fkitlab.pef.czu.cz%2F~wbdinfo141525%2Fen&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0" title="Validace HTML5">HTML5</a></li>
+						<li><a href="http://blindfriendly.cz/metodika#kap2" title="Blind Friendly web">Blind Friendly Web 2.3</a></li>
+					</ul>
+					<p>This web page use these libraries:</p>
+					<ul class="project-status">
+						<li>
+							<a href="http://nette.org/" title="Nette Framework">Nette Framework</a>
+						</li>
+						<li>
+							<a href="http://getbootstrap.com/" title="Bootstrap 3 CSS Framework">Bootstrap 3 CSS Framework</a>
+						</li>
+						<li>
+							<a href="http://jquery.com/" title="jQuery Javascript Framework">jQuery Javascript Framework</a>
+						</li>
+						<li>
+							<a href="http://modernizr.com/" title="Modernizr - detektor HTML/CSS vlastností prohlížeče">Modernizr - detects HTML5 and CSS3 features in the user's browser</a>
+						</li>
+						<li>
+							<a href="http://isotope.metafizzy.co/" title="Isotope - filtrování a srovnávání">Isotope - filtering and sorting</a>
+						</li>
+						<li>
+							<a href="http://rendro.github.io/easy-pie-chart/" title="Easy Pie Chart - grpahs">Easy Pie Chart - graphs</a>
+						</li>
+						<li>
+							<a href="http://gsgd.co.uk/sandbox/jquery/easing/" title="Easing">jQuery Easing - better CSS easing</a>
+						</li>
+						<li>
+							<a href="http://plugins.jquery.com/appear/" title="jQuery Appear">jQuery Appear - appear and disappear of items</a>
+						</li>
+						<li>
+							<a href="http://areaaperta.com/nicescroll/" title="jQuery Nicescroll">jQuery Nicescroll - nice scrollbars</a>
+						</li>
+						<li>
+							<a href="http://yui.github.io/yuicompressor/" title="YUI Compressor">YUI Compressor - compression and combination of CSS and JS files</a>
+						</li>
+					</ul>
+					<p class="project-status">Application is under version control on Git: <a href="https://github.com/literat/kegege/" title="GitHub Literat ">https://github.com/literat/kegege/</a></p>
 				</div>
 			</div>
 		</div>
@@ -42,7 +83,7 @@
 </section>
 
 <!-- services -->
-<section id="section-services" class="section pad-bot30 bg-white">
+<section id="services" class="section pad-bot30 bg-white">
 	<div class="container">
 		<div class="row mar-bot40">
 
@@ -59,7 +100,7 @@
 			<div class="col-lg-4" >
 				<div class="align-center">
 					<!--<i class="fa fa-terminal fa-5x mar-bot20"></i>-->
-					<figure class="member-photo"><img src="{$basePath}/img/canoeing.png" alt="" /></figure>
+					<figure class="member-photo"><img src="{$basePath}/img/canoeing.png" alt="Canoe" /></figure>
 					<h4 class="text-bold">Whitewater Kayaker</h4>
 					<p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
 						Mei cu dicat voluptaria volumus.
@@ -70,7 +111,7 @@
 			<div class="col-lg-4" >
 				<div class="align-center">
 					<!--<i class="fa fa-bolt fa-5x mar-bot20"></i>-->
-					<figure class="member-photo"><img src="{$basePath}/img/skaut.png" alt="" /></figure>
+					<figure class="member-photo"><img src="{$basePath}/img/skaut.png" alt="Scout logo" /></figure>
 					<h4 class="text-bold">Scout enthusiast</h4>
 					<p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
 						Mei cu dicat voluptaria volumus.
@@ -89,22 +130,20 @@
 			<div class="col-lg-12">
 				<div class="align-center">
 					<div class="testimonial pad-top40 pad-bot40 clearfix">
-						<h5>
-							Bad day on a water is still better than good day in a work!
-						</h5>
+						<h5>&nbsp;</h5>
 						<br/>
-						<span class="author">&mdash; MIKE DOE <a href="#">www.siteurl.com</a></span>
+						<span class="author">&nbsp;</span>
 					</div>
 
 				</div>
 			</div>
 		</div>
 
-	</div>	
+	</div>
 </section>
 			
 <!-- about -->
-<section id="section-about" class="section appear clearfix">
+<section id="about" class="section appear clearfix">
 	<div class="container">
 
 		<div class="row mar-bot40">
@@ -118,32 +157,42 @@
 
 		<div class="row align-center mar-bot40">
 
-			<div class="col-md-4">
+			<div class="col-md-3">
 				<div class="team-member">
-					<figure class="member-photo"><img src="{$basePath}/img/web_developer.jpg" alt="" /></figure>
+					<figure class="member-photo"><img src="{$basePath}/img/me/student.jpg" alt="I student" /></figure>
 					<div class="team-detail">
-						<h4>Thomas Litera</h4>
-						<span>Web Developer</span>
+						<h4>Student</h4>
+						<p class="text-justify">Začínal jsem na 6. základní škole v Kolíně, s rozšířenou výukou jazyků. Dále můj studijní život pokračoval přes kolínské Gymnázium až na vysokou školu. Nejprve jsem studoval Vysoké učení technické v Brně, ale po 3,5 letech se mi studium nepodařilo dokončit. Nyní se o to samé snažím na České zemědělské univerzitě, a jsem úspěšnější.</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-3">
 				<div class="team-member">
-					<figure class="member-photo"><img src="{$basePath}/img/whitewater_kayaker.jpg" alt="" /></figure>
+					<figure class="member-photo"><img src="{$basePath}/img/me/developer.jpg" alt="I developer" /></figure>
 					<div class="team-detail">
-						<h4>Thomas Litera</h4>
-						<span>Whitewater Kayaker</span>
+						<h4>Developer</h4>
+						<p class="text-justify">O počítače jsem se začal zajímat již na základní škole. Na Gymnáziu v Kolíně jsem se dostal blíže k vývoji webových aplikací a k PHP. A to mě uchvátilo. Ihned po maturitě jsem nastoupil na praxi do webové firmy, abych dále rozvíjel své schopnosti. V současné době pracuji pro Economia a. s., kde i nadále vyvýjím webové aplikace v PHP. Své schopnosti vývojáře uplatňuji i v Junáku, pro kterého jsem vytvořil celou řadu webů a aplikací.</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-3">
 				<div class="team-member">
-					<figure class="member-photo"><img src="{$basePath}/img/scout_enthusiast.jpg" alt="" /></figure>
+					<figure class="member-photo"><img src="{$basePath}/img/me/kayaker.jpg" alt="I kayaker" /></figure>
 					<div class="team-detail">
-						<h4>Thomas Litera</h4>
-						<span>Scout Enthusiast</span>
+						<h4>Kayaker</h4>
+						<p class="text-justify">Na divoké vodě trávím svůj volný čas. A to hlavně na kajaku, který mám ze všech lodí nejraději. Každoročně se mi daří vyjíždět do zahraničí a poznávat nové řeky a místa. V neposlední řadě tak Rakousko, jižní Francie, italský Piemont a další. A Česká republika má také své klenoty jako Čertovy proudy na Vltavě, soutěsky na Labi nebo Jizeru a další řeky v Krkonoších i jinde.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="team-member">
+					<figure class="member-photo"><img src="{$basePath}/img/me/scout.jpg" alt="I scout" /></figure>
+					<div class="team-detail">
+						<h4>Scout</h4>
+						<p class="text-justify">V roce 2004 jsem se stal členem Junáka ČR, největší dětské organizace v republice. Pro své působení jsem si vybral přístav vodních skautů Poutníci Kolin, neb mám vodu a lodě rád. Vedl jsem zde dětský oddíl a vychoval z nich své nástupce. Prošel jsem si skautským vzděláváním a díky tomu jsem pak mohl přístav i spoluvést jako zástupce. Skautingu, vzdělávání a výchově se věnuji i nadále jako člen Kapitanátu vodních skautů.</p>
 					</div>
 				</div>
 			</div>
@@ -155,191 +204,189 @@
 <!-- /about -->
 		
 <!-- spacer section:stats -->
-<section id="parallax1" class="section pad-top40 pad-bot40" data-stellar-background-ratio="0.5">
+<section id="parallax-cv" class="section pad-top40 pad-bot40" data-stellar-background-ratio="0.5">
 	<div class="container">
 		<div class="align-center pad-top40 pad-bot40">
-			<blockquote class="bigquote color-white">Indoctum accusamus comprehensam</blockquote>
-			<p class="color-white">Bootstraptaste</p>
+			<blockquote class="bigquote color-white">&nbsp;</blockquote>
+			<p class="color-white">&nbsp;</p>
 		</div>
 	</div>
 </section>
 
 <!-- cv -->
+<section id="cv" class="section appear clearfix profile activate">
+	<div class="container">
 
-<section id="section-cv" class="section appear clearfix profile activate">
-    <div class="container">
-
-    	<div class="row mar-bot40">
+		<div class="row mar-bot40">
 			<div class="col-md-offset-3 col-md-6">
 				<div class="section-header">
-					<h2 class="section-heading animated" data-animation="bounceInUp">Timeline</h2>
-					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam.</p>
+					<h2 class="section-heading animated" data-animation="bounceInUp">CV</h2>
+					<p>aka my Timeline</p>
 				</div>
 			</div>
 		</div>
 
-        <div class="row">
-            <div class="col-sm-7 col-sm-offset-5">
-                <ul>
-                    <li class="title"><span class="fa fa-user"></span>Profile</li>
-                    <li>
-                        <span class="note">Full name</span>
-                        <p><strong>Tomáš Litera</strong></p>
-                    </li>
-                    <li>
-                        <span class="note">Born</span>
-                        <p><strong>29 June 1988</strong></p>
-                        <p><strong>Kolin, Czech republic</strong></p>
-                    </li>
-                    
-                    <li>
-                        <span class="note">LinkedIn Profile</span>
-                        <p><strong><a href="#">https://www.linkedin.com/in/tomaslitera</a></strong></p>
-                    </li>
-                </ul>
-            </div>
-        </div>
+		<div class="row">
+			<div class="col-sm-7 col-sm-offset-5">
+				<ul>
+					<li class="title"><span class="fa fa-user"></span>Profile</li>
+					<li>
+						<span class="note">Full name</span>
+						<p><strong>Tomáš Litera</strong></p>
+					</li>
+					<li>
+						<span class="note">Born</span>
+						<p><strong>29 June 1988</strong></p>
+						<p><strong>Kolin, Czech republic</strong></p>
+					</li>
+					
+					<li>
+						<span class="note">LinkedIn Profile</span>
+						<p><strong><a href="#">https://www.linkedin.com/in/tomaslitera</a></strong></p>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-        <div class="row">
-            <div class="col-sm-7 col-sm-offset-5">
-                <ul>
-                    <li class="title"><span class="fa fa-briefcase"></span>Work experience</li>
-                    <li>
-                        <span class="note">June 2014 - Current</span>
-                        <p><strong>Economia, a.s.</strong></p>
-                        <p><strong>PHP Developer</strong> in Prague, CZ</p>
-                        <p class="description">Vestibulum ut pharetra diam, vitae hendrerit sapien. Praesent porttitor augue nec semper suscipit. Nulla et cursus lectus. Praesent vel feugiat dolor.</p>
-                    </li>
-                    <li>
-                        <span class="note">February 2011 - June 2014</span>
-                        <p><strong>Centrum Holdings</strong></p>
-                        <p><strong>PHP Developer</strong> in Prague, CZ</p>
-                        <p class="description">Donec vel nulla mollis, mattis orci vel, vulputate tellus. Cras interdum sapien quis risus mattis egestas. Etiam rhoncus lacus turpis, in vulputate arcu imperdiet non.</p>
-                    </li>
-                    <li>
-                        <span class="note">December 2008 - June 2014</span>
-                        <p><strong>Freelancer</strong></p>
-                        <p><strong>Student</strong> in Brno, CZ</p>
-                        <p class="description">Donec vel nulla mollis, mattis orci vel, vulputate tellus. Cras interdum sapien quis risus mattis egestas. Etiam rhoncus lacus turpis, in vulputate arcu imperdiet non.</p>
-                    </li>
-                    <li>
-                        <span class="note">June 2008 - December 2008</span>
-                        <p><strong>Centrum Holdings</strong></p>
-                        <p><strong>Web App Administrator</strong> in Prague, CZ</p>
-                        <p class="description">Donec vel nulla mollis, mattis orci vel, vulputate tellus. Cras interdum sapien quis risus mattis egestas. Etiam rhoncus lacus turpis, in vulputate arcu imperdiet non.</p>
-                    </li>
-                    <li>
-                        <span class="note">April 2008 - June 2008</span>
-                        <p><strong>NetCentrum</strong></p>
-                        <p><strong>Web App Administrator</strong> in Prague, CZ</p>
-                        <p class="description">Donec vel nulla mollis, mattis orci vel, vulputate tellus. Cras interdum sapien quis risus mattis egestas. Etiam rhoncus lacus turpis, in vulputate arcu imperdiet non.</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
+		<div class="row">
+			<div class="col-sm-7 col-sm-offset-5">
+				<ul>
+					<li class="title"><span class="fa fa-briefcase"></span>Work experience</li>
+					<li>
+						<span class="note">June 2014 - Current</span>
+						<p><strong>Economia, a.s.</strong></p>
+						<p><strong>PHP Developer</strong> in Prague, CZ</p>
+						<p class="description">Vestibulum ut pharetra diam, vitae hendrerit sapien. Praesent porttitor augue nec semper suscipit. Nulla et cursus lectus. Praesent vel feugiat dolor.</p>
+					</li>
+					<li>
+						<span class="note">February 2011 - June 2014</span>
+						<p><strong>Centrum Holdings</strong></p>
+						<p><strong>PHP Developer</strong> in Prague, CZ</p>
+						<p class="description">Donec vel nulla mollis, mattis orci vel, vulputate tellus. Cras interdum sapien quis risus mattis egestas. Etiam rhoncus lacus turpis, in vulputate arcu imperdiet non.</p>
+					</li>
+					<li>
+						<span class="note">December 2008 - June 2014</span>
+						<p><strong>Freelancer</strong></p>
+						<p><strong>Student</strong> in Brno, CZ</p>
+						<p class="description">Donec vel nulla mollis, mattis orci vel, vulputate tellus. Cras interdum sapien quis risus mattis egestas. Etiam rhoncus lacus turpis, in vulputate arcu imperdiet non.</p>
+					</li>
+					<li>
+						<span class="note">June 2008 - December 2008</span>
+						<p><strong>Centrum Holdings</strong></p>
+						<p><strong>Web App Administrator</strong> in Prague, CZ</p>
+						<p class="description">Donec vel nulla mollis, mattis orci vel, vulputate tellus. Cras interdum sapien quis risus mattis egestas. Etiam rhoncus lacus turpis, in vulputate arcu imperdiet non.</p>
+					</li>
+					<li>
+						<span class="note">April 2008 - June 2008</span>
+						<p><strong>NetCentrum</strong></p>
+						<p><strong>Web App Administrator</strong> in Prague, CZ</p>
+						<p class="description">Donec vel nulla mollis, mattis orci vel, vulputate tellus. Cras interdum sapien quis risus mattis egestas. Etiam rhoncus lacus turpis, in vulputate arcu imperdiet non.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-        <div class="row">
-            <div class="col-sm-7 col-sm-offset-5">
-                <ul>
-                    <li class="title"><span class="fa fa-book"></span>Education</li>
-                    <li>
-                        <span class="note">June 2012 - June 2015</span>
-                        <p><strong>Bachelors Study</strong></p>
-                        <p><strong>Czech University of Life Science</strong> in Prague - Suchdol, Czech republic</p>
-                        <p class="description">Vestibulum ut pharetra diam, vitae hendrerit sapien. Praesent porttitor augue nec semper suscipit. Nulla et cursus lectus. Praesent vel feugiat dolor.</p>
-                    </li>
-                    <li>
-                        <span class="note">June 2008 - February 2012</span>
-                        <p><strong>Bachelors Study</strong> - unfinished</p>
-                        <p><strong>Technical University</strong> in Brno, Czech republic</p>
-                        <p class="description">Donec vel nulla mollis, mattis orci vel, vulputate tellus. Cras interdum sapien quis risus mattis egestas. Etiam rhoncus lacus turpis, in vulputate arcu imperdiet non.</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
+		<div class="row">
+			<div class="col-sm-7 col-sm-offset-5">
+				<ul>
+					<li class="title"><span class="fa fa-book"></span>Education</li>
+					<li>
+						<span class="note">June 2012 - June 2015</span>
+						<p><strong>Bachelors Study</strong></p>
+						<p><strong>Czech University of Life Science</strong> in Prague - Suchdol, Czech republic</p>
+						<p class="description">Vestibulum ut pharetra diam, vitae hendrerit sapien. Praesent porttitor augue nec semper suscipit. Nulla et cursus lectus. Praesent vel feugiat dolor.</p>
+					</li>
+					<li>
+						<span class="note">June 2008 - February 2012</span>
+						<p><strong>Bachelors Study</strong> - unfinished</p>
+						<p><strong>Technical University</strong> in Brno, Czech republic</p>
+						<p class="description">Donec vel nulla mollis, mattis orci vel, vulputate tellus. Cras interdum sapien quis risus mattis egestas. Etiam rhoncus lacus turpis, in vulputate arcu imperdiet non.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-        <div class="row">
-            <div class="col-sm-7 col-sm-offset-5">
-                <ul>
-                    <li class="title"><span class="fa fa-tasks"></span>Professional skills</li>
-                    <li>
-                        <p>HTML/CSS<span class="annotation pull-right">95%</span></p>
-                        <div class="progress">
-                            <div style="width: 95%;" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <p>PHP<span class="annotation pull-right">85%</span></p>
-                        <div class="progress">
-                            <div style="width: 85%;" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <p>Javascript<span class="annotation pull-right">70%</span></p>
-                        <div class="progress">
-                            <div style="width: 70%;" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+		<div class="row">
+			<div class="col-sm-7 col-sm-offset-5">
+				<ul>
+					<li class="title"><span class="fa fa-tasks"></span>Professional skills</li>
+					<li>
+						<p>HTML/CSS<span class="annotation pull-right">80%</span></p>
+						<div class="progress">
+							<div style="width: 95%;" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</li>
+					<li>
+						<p>PHP<span class="annotation pull-right">75%</span></p>
+						<div class="progress">
+							<div style="width: 85%;" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</li>
+					<li>
+						<p>Javascript<span class="annotation pull-right">60%</span></p>
+						<div class="progress">
+							<div style="width: 70%;" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-        <div class="row">
-            <div class="col-sm-7 col-sm-offset-5">
-                <ul>
-                    <li class="title"><span class="fa fa-bar-chart-o"></span>Personal skills</li>
-                    <li>
-                        <span class="chart" data-percent="95"><span class="skill">Creativity</span>
-                            <span class="percent"></span>
-                        </span>
-                        <span class="chart" data-percent="85"><span class="skill">Social skills</span>
-                            <span class="percent"></span>
-                        </span>
-                        <span class="chart" data-percent="80"><span class="skill">Leadership</span>
-                            <span class="percent"></span>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-        </div>
+		<div class="row">
+			<div class="col-sm-7 col-sm-offset-5">
+				<ul>
+					<li class="title"><span class="fa fa-bar-chart-o"></span>Personal skills</li>
+					<li>
+						<span class="chart" data-percent="90"><span class="skill">Creativity</span>
+							<span class="percent"></span>
+						</span>
+						<span class="chart" data-percent="80"><span class="skill">Social skills</span>
+							<span class="percent"></span>
+						</span>
+						<span class="chart" data-percent="75"><span class="skill">Leadership</span>
+							<span class="percent"></span>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-        <div class="row">
-            <div class="col-sm-7 col-sm-offset-5">
-                <ul>
-                    <li class="title"><span class="fa fa-heart-o"></span>Interests</li>
-                    <li>
-                        <p><strong>Whitewater</strong></p>
-                        <p class="description">Vestibulum ut pharetra diam, vitae hendrerit sapien. Praesent porttitor augue nec semper suscipit. Nulla et cursus lectus. Praesent vel feugiat dolor.</p>
-                    </li>
-                    <li>
-                        <p><strong>Outdoor Sports</strong></p>
-                        <p class="description">Donec vel nulla mollis, mattis orci vel, vulputate tellus. Cras interdum sapien quis risus mattis egestas. Etiam rhoncus lacus turpis, in vulputate arcu imperdiet non.</p>
-                    </li>
-                    <li>
-                        <p><strong>Scouting</strong></p>
-                        <p class="description">Maecenas velit eros, congue quis accumsan sed, consequat id magna. Pellentesque at auctor lacus.</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
+		<div class="row">
+			<div class="col-sm-7 col-sm-offset-5">
+				<ul>
+					<li class="title"><span class="fa fa-heart-o"></span>Interests</li>
+					<li>
+						<p><strong>Whitewater</strong></p>
+						<p class="description">Vestibulum ut pharetra diam, vitae hendrerit sapien. Praesent porttitor augue nec semper suscipit. Nulla et cursus lectus. Praesent vel feugiat dolor.</p>
+					</li>
+					<li>
+						<p><strong>Outdoor Sports</strong></p>
+						<p class="description">Donec vel nulla mollis, mattis orci vel, vulputate tellus. Cras interdum sapien quis risus mattis egestas. Etiam rhoncus lacus turpis, in vulputate arcu imperdiet non.</p>
+					</li>
+					<li>
+						<p><strong>Scouting</strong></p>
+						<p class="description">Maecenas velit eros, congue quis accumsan sed, consequat id magna. Pellentesque at auctor lacus.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-    </div>
+	</div>
 </section>
-
 <!-- /cv -->
 
 <!-- spacer section:stats -->
-<section id="parallax1" class="section pad-top40 pad-bot40" data-stellar-background-ratio="0.5">
+<section id="parallax-portfolio" class="section pad-top40 pad-bot40" data-stellar-background-ratio="0.5">
 	<div class="container">
 		<div class="align-center pad-top40 pad-bot40">
-			<blockquote class="bigquote color-white">Indoctum accusamus comprehensam</blockquote>
-			<p class="color-white">Bootstraptaste</p>
+			<blockquote class="bigquote color-white">&nbsp;</blockquote>
+			<p class="color-white">&nbsp;</p>
 		</div>
 	</div>
 </section>
 
 <!-- section works -->
-<section id="section-works" class="section appear clearfix">
+<section id="works" class="section appear clearfix">
 	<div class="container">
 
 		<div class="row mar-bot40">
@@ -354,10 +401,10 @@
 		<div class="row">
 			<nav id="filter" class="col-md-12 text-center">
 				<ul>
-					<li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
-					<li><a href="#"  class="btn-theme btn-small" data-filter=".webdesign" >Web Design</a></li>
-					<li><a href="#"  class="btn-theme btn-small" data-filter=".photography">Developer</a></li>
-					<li ><a href="#" class="btn-theme btn-small" data-filter=".print">Projects</a></li>
+					<li><a href="#" class="current btn-theme btn-small" data-filter="*" title="Filter: All">All</a></li>
+					<li><a href="#"  class="btn-theme btn-small" data-filter=".webdesign" title="Filter: Webdesign">Web Design</a></li>
+					<li><a href="#"  class="btn-theme btn-small" data-filter=".apps" title="Filter: Apps">Applications</a></li>
+					<li ><a href="#" class="btn-theme btn-small" data-filter=".projects" title="Filter: Projects">Projects</a></li>
 				</ul>
 			</nav>
 			<div class="col-md-12">
@@ -366,130 +413,94 @@
 
 						<article class="col-md-4 isotopeItem webdesign">
 							<div class="portfolio-item">
-								<img src="{$basePath}/img/portfolio/drager-theme.png" alt="" />
+								<img src="{$basePath}/img/portfolio/drager-theme.png" alt="Náhled Drager web šablona" />
 								<div class="portfolio-desc align-center">
 									<div class="folio-info">
-										<h5><a href="http://drager.skauting.cz/">LK Drager WordPress Theme</a></h5>
+										<h5><a href="http://drager.skauting.cz/" title="Web LK Drager">LK Drager WordPress Theme</a></h5>
 										<a href="{$basePath}/img/portfolio/drager-theme.png" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-									 </div>										   
-								 </div>
-							</div>
-						</article>
-
-						<article class="col-md-4 isotopeItem photography">
-							<div class="portfolio-item">
-								<img src="{$basePath}/img/portfolio/navigamus12-theme.png" alt="" />
-								<div class="portfolio-desc align-center">
-									<div class="folio-info">
-										<h5><a href="http://www.navigamus.cz/">Navigamus 2012 WordPress Theme</a></h5>
-										<a href="{$basePath}/img/portfolio/navigamus12-theme.png" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-									 </div>										   
-								 </div>
-							</div>
-						</article>
-
-						<article class="col-md-4 isotopeItem photography">
-							<div class="portfolio-item">
-								<img src="{$basePath}/img/portfolio/poutnicikolin-theme.png" alt="" />
-								<div class="portfolio-desc align-center">
-									<div class="folio-info">
-										<h5><a href="http://www.poutnicikolin.cz/">Poutnicikolin WordPress Theme</a></h5>
-										<a href="{$basePath}/img/portfolio/poutnicikolin-theme.png" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-									 </div>										   
-								 </div>
-							</div>
-						</article>
-
-						<article class="col-md-4 isotopeItem print">
-							<div class="portfolio-item">
-								<img src="{$basePath}/img/portfolio/3jezy-theme.png" alt="" />
-								<div class="portfolio-desc align-center">
-									<div class="folio-info">
-										<h5><a href="http://3jezy.skauting.cz/">3 jezy Joomla Theme</a></h5>
-										<a href="{$basePath}/img/portfolio/3jezy-theme.png" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-									 </div>										   
-								 </div>
-							</div>
-						</article>
-
-						<article class="col-md-4 isotopeItem photography">
-							<div class="portfolio-item">
-								<img src="{$basePath}/img/portfolio/dsw-oddil-theme.png" alt="" />
-								<div class="portfolio-desc align-center">
-									<div class="folio-info">
-										<h5><a href="http://dsw-oddil.skauting.cz/">DSW Oddil WordPress Theme</a></h5>
-										<a href="{$basePath}/img/portfolio/dsw-oddil-theme.png" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-									 </div>										   
+									 </div>
 								 </div>
 							</div>
 						</article>
 
 						<article class="col-md-4 isotopeItem webdesign">
 							<div class="portfolio-item">
-								<img src="{$basePath}/img/portfolio/srazyvs-app.png" alt="" />
+								<img src="{$basePath}/img/portfolio/navigamus12-theme.png" alt=" Náhled Navigamus web šablona" />
 								<div class="portfolio-desc align-center">
 									<div class="folio-info">
-										<h5><a href="http://vodni.skauting.cz/srazvs/registration/">SrazyVS Application</a></h5>
+										<h5><a href="http://www.navigamus.cz/" title="Web Navigamus.cz">Navigamus 2012 WordPress Theme</a></h5>
+										<a href="{$basePath}/img/portfolio/navigamus12-theme.png" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+									 </div>
+								 </div>
+							</div>
+						</article>
+
+						<article class="col-md-4 isotopeItem webdesign">
+							<div class="portfolio-item">
+								<img src="{$basePath}/img/portfolio/poutnicikolin-theme.png" alt=" Náhled Poutnicikolin web šablona" />
+								<div class="portfolio-desc align-center">
+									<div class="folio-info">
+										<h5><a href="http://www.poutnicikolin.cz/" title="Web Poutníc Kolín">Poutnicikolin WordPress Theme</a></h5>
+										<a href="{$basePath}/img/portfolio/poutnicikolin-theme.png" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+									 </div>
+								 </div>
+							</div>
+						</article>
+
+						<article class="col-md-4 isotopeItem webdesign">
+							<div class="portfolio-item">
+								<img src="{$basePath}/img/portfolio/3jezy-theme.png" alt="Náhled 3 jezy web šablona" />
+								<div class="portfolio-desc align-center">
+									<div class="folio-info">
+										<h5><a href="http://3jezy.skauting.cz/" title="Web 3 jezy">3 jezy Joomla Theme</a></h5>
+										<a href="{$basePath}/img/portfolio/3jezy-theme.png" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+									 </div>
+								 </div>
+							</div>
+						</article>
+
+						<article class="col-md-4 isotopeItem webdesign">
+							<div class="portfolio-item">
+								<img src="{$basePath}/img/portfolio/dsw-oddil-theme.png" alt="Náhled DSW oddil web šablona" />
+								<div class="portfolio-desc align-center">
+									<div class="folio-info">
+										<h5><a href="http://dsw-oddil.skauting.cz/" title="Web Dobrý skautský web Oddíl">DSW Oddil WordPress Theme</a></h5>
+										<a href="{$basePath}/img/portfolio/dsw-oddil-theme.png" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+									 </div>
+								 </div>
+							</div>
+						</article>
+
+						<article class="col-md-4 isotopeItem apps">
+							<div class="portfolio-item">
+								<img src="{$basePath}/img/portfolio/srazyvs-app.png" alt="Náhled aplikace SrazyVS" />
+								<div class="portfolio-desc align-center">
+									<div class="folio-info">
+										<h5><a href="http://vodni.skauting.cz/srazvs/registration/" title="Registrace na Sraz vodních skautů">SrazyVS Application</a></h5>
 										<a href="{$basePath}/img/portfolio/srazyvs-app.png" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-									 </div>										   
-								 </div>
-							</div>
-						</article>
-<!--
-						<article class="col-md-4 isotopeItem print">
-							<div class="portfolio-item">
-								<img src="{$basePath}/img/portfolio/img7.jpg" alt="" />
-								<div class="portfolio-desc align-center">
-									<div class="folio-info">
-										<h5><a href="#">Portfolio name</a></h5>
-										<a href="{$basePath}/img/portfolio/img7.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
 									 </div>
 								 </div>
 							</div>
 						</article>
 
-						<article class="col-md-4 isotopeItem photography">
-							<div class="portfolio-item">
-								<img src="{$basePath}/img/portfolio/img8.jpg" alt="" />
-								<div class="portfolio-desc align-center">
-									<div class="folio-info">
-										<h5><a href="#">Portfolio name</a></h5>
-										<a href="{$basePath}/img/portfolio/img8.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-									 </div>
-								 </div>
-							</div>
-						</article>
-
-						<article class="col-md-4 isotopeItem print">
-							<div class="portfolio-item">
-								<img src="{$basePath}/img/portfolio/img9.jpg" alt="" />
-								<div class="portfolio-desc align-center">
-									<div class="folio-info">
-										<h5><a href="#">Portfolio name</a></h5>
-										<a href="{$basePath}/img/portfolio/img9.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-									 </div>
-								 </div>
-							</div>
-						</article>
 					</div>
--->
 				</div>
-
 			</div>
+
 		</div>
 
 	</div>
 </section>
 
-<section id="parallax2" class="section parallax" data-stellar-background-ratio="0.5">	
+<section id="parallax-contact" class="section parallax" data-stellar-background-ratio="0.5">
 	<div class="align-center pad-top40 pad-bot40">
-		<blockquote class="bigquote color-white">Indoctum accusamus comprehensam</blockquote>
-		<p class="color-white">Bootstraptaste</p>
+		<blockquote class="bigquote color-white">&nbsp;</blockquote>
+		<p class="color-white">&nbsp;</p>
 	</div>
 </section>
 
 <!-- contact -->
-<section id="section-contact" class="section appear clearfix">
+<section id="contact" class="section appear clearfix">
 	<div class="container">
 				
 		<div class="row mar-bot40">
@@ -506,7 +517,7 @@
 					<div id="sendmessage">
 						 Your message has been sent. Thank you!
 					</div>
-					<form action="contact/contact.php" method="post" role="form" class="contactForm">
+					<form action="{$basePath}/contact/contact.php" method="post" role="form" class="contactForm">
 						<div class="form-group">
 							<label for="name">Your Name</label>
 							<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
@@ -524,7 +535,7 @@
 						</div>
 						<div class="form-group">
 							<label for="message">Message</label>
-							<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+							<textarea class="form-control" name="message" id="message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
 							<div class="validation"></div>
 						</div>
 
@@ -540,7 +551,7 @@
 </section>
 
 <!-- map -->
-<section id="section-map" class="clearfix">
+<section id="maps" class="clearfix">
 	<div id="map"></div>
 </section>
 		
@@ -550,16 +561,38 @@
 			<div class="col-sm-12 align-center">
 				<ul class="social-network social-circle">
 					<!--<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>-->
-					<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-					<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-				</ul>				
+					<li>
+						<a href="https://www.facebook.com/literat/" class="icoFacebook" title="Facebook">
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="icoTwitter" title="Twitter">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://plus.google.com/108355877304812581541/posts" class="icoGoogle" title="Google +">
+							<i class="fa fa-google-plus"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://cz.linkedin.com/in/tomaslitera/" class="icoLinkedin" title="Linkedin">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.github.com/literat/" class="icoGithub" title="Github">
+							<i class="fa fa-github"></i>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 
 		<div class="row align-center copyright">
-			<div class="col-sm-12"><p>Copyright &copy; 2014 Thomas Litera @ <a href="http://kegege.net">kegege.net</a></p></div>
+			<div class="col-sm-12">
+				<p>Copyright &copy; 2014 Thomas Litera @ <a href="http://kegege.net">kegege.net</a></p></div>
 		</div>
 	</div>
 
