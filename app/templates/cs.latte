@@ -39,7 +39,7 @@
 					<p>Tato webová stránka je semestrálním projektem předmětu Webdesign vyučovaném na České zemědělské univerzitě v rámci oboru INFO.</p>
 					<p>Tato stránka vyhovuje následujícím standardům:</p>
 					<ul class="project-status">
-						<li><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fkitlab.pef.czu.cz%2F~wbdinfo141525%2Fcs&charset=%28detect+automatically%29&doctype=Inline&group=0" title="Validace HTML5">HTML5</a></li>
+						<li><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fkitlab.pef.czu.cz%2F~wbdinfo141525%2Fcs&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0" title="Validace HTML5">HTML5</a></li>
 						<li><a href="http://blindfriendly.cz/metodika#kap2" title="Blind Friendly metodika">Blind Friendly Web 2.3</a></li>
 					</ul>
 					<p>Tato stránka používá následující knihovny:</p>
@@ -75,6 +75,7 @@
 							<a href="http://yui.github.io/yuicompressor/" title="YUI Compressor">YUI Compressor - komprese a kombinace CSS a JS souborů</a>
 						</li>
 					</ul>
+					<p class="project-status">Aplikace je verzována v GITu: <a href="https://github.com/literat/kegege/" title="GitHub Literat ">https://github.com/literat/kegege/</a></p>
 				</div>
 			</div>
 		</div>
@@ -508,9 +509,9 @@
 			<div class="col-md-8 col-md-offset-2">
 				<div class="cform" id="contact-form">
 					<div id="sendmessage">
-						 Your message has been sent. Thank you!
+						 Vaše zpráva byla odeslána! Děkuji.
 					</div>
-					<form action="contact/contact.php" method="post" role="form" class="contactForm">
+					<form action="app/contact/contact.php" method="post" role="form" class="contactForm">
 						<div class="form-group">
 							<label for="name">Vaše jméno</label>
 							<input type="text" name="name" class="form-control" id="name" placeholder="Vaše jméno" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
@@ -544,7 +545,7 @@
 </section>
 
 <!-- map -->
-<section id="map" class="clearfix">
+<section id="maps" class="clearfix">
 	<div id="map"></div>
 </section>
 		
