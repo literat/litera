@@ -8,3 +8,4 @@ vendor/*
 !web.config
 app/config/config.local.neon
 *.sublime-*
+composer*
