@@ -694,8 +694,8 @@ a.scrollup:hover{
 .social-network a.icoGithub:hover {
 	background-color:#111111;
 }
-.social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i, 
-.social-network a.icoGoogle:hover i, .social-network a.icoLinkedin:hover i {
+.social-network a.icoFacebook:hover em, .social-network a.icoTwitter:hover em, 
+.social-network a.icoGoogle:hover em, .social-network a.icoLinkedin:hover em {
 	color:#fff;
 }
 
@@ -708,13 +708,13 @@ a.scrollup:hover{
 	height: 50px;
 	font-size:1.250em;
 }
-.social-circle li i {
+.social-circle li em {
 	margin:0;
 	line-height:50px;
 	text-align: center;
 }
 
-.social-circle i {
+.social-circle em {
 	color: #fff;
 	-webkit-transition: all 0.8s;
 	-moz-transition: all 0.8s;
@@ -723,18 +723,10 @@ a.scrollup:hover{
 	transition: all 0.8s;
 }
 
-
-/* stats */
-
-
-
 /* buttons */
 .btn {
 	border: 0;
 }
-
-
-
 
 /*===========================
   --- Profile Timeline ----
@@ -875,7 +867,6 @@ Media queries
 		margin-top: 20px;
 	}
 }
-
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
