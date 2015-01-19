@@ -2,6 +2,7 @@ app/bin/*
 app/temp/*
 vendor/*
 !vendor/others
+.git-ftp-ignore
 
 .DS_Store
 !.gitignore
