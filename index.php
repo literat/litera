@@ -47,7 +47,7 @@ $router[] = new Route('[<lang (?-i)cs|en>]', function($presenter, $lang) use ($c
 	return $template;
 });
 
-// http://davidgrudl.com/sources
+// http://litera.em/sources
 $router[] = new Route('sources', function($presenter) {
 
 	$template = $presenter->createTemplate()
