@@ -1,0 +1,22 @@
+language: php
+php:
+  - 7.2
+
+before_install:
+  - mv .env.testing .env
+  - composer self-update
+
+install:
+  - composer install --no-interaction
+  - npm install
+
+script:
+  - composer test
+
+after_script:
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then composer deploy:diff; composer deploy:production; fi
+
+cache:
+  directories:
+    - node_modules
+    - vendor
