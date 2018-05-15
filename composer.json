@@ -11,6 +11,7 @@
         "laravel/tinker": "^1.0"
     },
     "require-dev": {
+        "banago/phploy": "^4.8",
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
@@ -34,6 +35,10 @@
         }
     },
     "scripts": {
+        "test": "phpunit",
+        "deploy:diff": "phploy --list",
+        "deploy:production": "phploy -s production",
+        "deploy:production:fresh": "phploy -s production --fresh",
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
