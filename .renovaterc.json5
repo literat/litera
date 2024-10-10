@@ -2,6 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>literat/renovate-config",
-    "local>literat/renovate-config:scheduleEveryTwoWeeksNonOfficeHours.json5"
+    "local>literat/renovate-config:scheduleEveryTwoWeeksNonOfficeHours"
   ]
 }
