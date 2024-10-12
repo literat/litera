@@ -51,3 +51,7 @@ CODEOWNERS
 
 # Well Known Files
 **/.well-known/*
+
+# Prisma
+*.sql
+*.prisma

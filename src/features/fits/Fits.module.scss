@@ -1,0 +1,7 @@
+.Fits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+}
