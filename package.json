@@ -20,5 +20,5 @@
     "sass": "^1.57.1",
     "typescript": "4.9.5"
   },
-  "packageManager": "yarn@4.5.0"
+  "packageManager": "yarn@4.5.1"
 }
