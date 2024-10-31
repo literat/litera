@@ -398,12 +398,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.19.55":
-  version: 18.19.55
-  resolution: "@types/node@npm:18.19.55"
+"@types/node@npm:18.19.62":
+  version: 18.19.62
+  resolution: "@types/node@npm:18.19.62"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10/7ba2b7203338f855fd7e90d09de3196e0d534c361ee0fbd7e3f24d416b867a017530d5721c4186f2c5402184e824a1fe65d2b5f9291751b9d8a7d2f9824f9a73
+  checksum: 10/6b930cb754af87911c1e11e6e0e435ee1c16d42651df3f71d35526fc0e516780f2c1a6df12aa40cf7b503683d1b80ec8e5226ba02ff445a1957a02fce65a7769
   languageName: node
   linkType: hard
 
@@ -2748,7 +2748,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "litera@workspace:."
   dependencies:
-    "@types/node": "npm:18.19.55"
+    "@types/node": "npm:18.19.62"
     "@types/react": "npm:18.3.11"
     "@types/react-dom": "npm:18.3.1"
     eslint: "npm:8.57.1"
