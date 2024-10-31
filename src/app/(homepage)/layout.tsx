@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { ReactNode } from 'react';
-import '../styles/globals.scss';
-import { inter } from '../ui/fonts';
+import '@local/styles/globals.scss';
+import { inter } from '@local/ui/fonts';
 
 export const metadata: Metadata = {
   title: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://litera.me'),
 };
 
-export default function RootLayout({
+export default function HomepageLayout({
   children,
 }: {
   children: ReactNode;
