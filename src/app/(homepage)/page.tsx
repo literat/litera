@@ -1,7 +1,7 @@
 import FamilyMemberCard from '@local/components/FamilyMemberCard/FamilyMemberCard'
 import styles from '@local/styles/Home.module.scss'
 
-export default function Home() {
+export default function HomepagePage() {
   return (
       <main className={styles.main}>
         <div className={styles.description}>
@@ -35,7 +35,7 @@ export default function Home() {
         </div>
 
         <div className={styles.fullWidth}>
-          <FamilyMemberCard link="/" icon="🏠" name="Home" description="Fits, Energy, Weather, etc ..." />
+          <FamilyMemberCard link="/home" icon="🏠" name="Home" description="Fits, Energy, Weather, etc ..." />
         </div>
 
       </main>
