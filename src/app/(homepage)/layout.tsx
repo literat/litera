@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { ReactNode } from 'react';
 import '@local/styles/globals.scss';
 import { inter } from '@local/ui/fonts';
+import React from 'react';
 
 export const metadata: Metadata = {
   title: {
