@@ -1,5 +1,4 @@
 import React from 'react'
-
 import styles from './FamilyMemberCard.module.scss';
 
 interface FamilyMemberCardProps {

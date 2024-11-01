@@ -1,4 +1,4 @@
-import FamilyMemberCard from '@local/components/FamilyMemberCard/FamilyMemberCard'
+import { FamilyMemberCard } from '@local/components/FamilyMemberCard'
 import styles from '@local/styles/Home.module.scss'
 
 export default function HomepagePage() {
