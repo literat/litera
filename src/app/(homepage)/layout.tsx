@@ -13,11 +13,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://litera.me'),
 };
 
-export default function HomepageLayout({
-  children,
-}: {
-  children: ReactNode;
-}) {
+export default function HomepageLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>{children}</body>

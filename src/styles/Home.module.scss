@@ -160,7 +160,8 @@
 
 /* Mobile */
 @media (max-width: 700px) {
-  .gridHalfs, .gridThirds {
+  .gridHalfs,
+  .gridThirds {
     grid-template-columns: repeat(1, 100%);
   }
 }
