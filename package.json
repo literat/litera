@@ -9,6 +9,7 @@
     "start": "next start",
     "test": "npm-run-all --serial lint",
     "lint": "npm-run-all --serial lint:scripts lint:text",
+    "lint:commit": "yarn commitlint --verbose --color --from $(git merge-base origin/main HEAD)",
     "lint:scripts": "next lint",
     "lint:text": "textlint ./",
     "lint:text:fix": "yarn lint:text --fix",
@@ -29,8 +30,11 @@
     "typescript": "4.9.5"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
     "@lmc-eu/prettier-config": "^2.0.1",
     "@lmc-eu/textlint-rule-preset-lmc": "^2.0.1",
+    "commitlint": "^19.5.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "npm-run-all2": "^7.0.1",
