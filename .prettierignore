@@ -1,0 +1,50 @@
+# Build files
+**/dist
+**/build
+**/.build
+
+**/cache
+
+# Ignoring js files because they are already formatted by ESLint (which is using Prettier plugin)
+**/*.js
+
+# Code coverage
+**/coverage
+**/coverage/**
+**/.coverage
+**/.coverage/**
+
+# Yarn Modern
+# @see: https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+.yarn/plugins
+.yarn/releases
+.yarn/*.gz
+
+# Lock Files
+*.lock
+
+# Makefiles
+Makefile
+makefile
+
+# Images
+*.png
+
+# Ignore File
+.*ignore
+
+# Husky.js Files
+.husky/*
+
+# Shell Scripts
+*.sh
+
+# Favicon
+*.ico
+
+# GitHub
+CODEOWNERS
+
+# Unformatted fixtures
+**/{fixtures}/**/unformatted*
+**/__fixtures__/unformatted*
