@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styles from './FamilyMemberCard.module.scss';
 
 interface FamilyMemberCardProps {
@@ -8,7 +8,12 @@ interface FamilyMemberCardProps {
   description: string;
 }
 
-export default function FamilyMemberCard({ link, icon, name, description }: FamilyMemberCardProps) {
+export default function FamilyMemberCard({
+  link,
+  icon,
+  name,
+  description,
+}: FamilyMemberCardProps) {
   return (
     <a
       href={link}
@@ -16,8 +21,10 @@ export default function FamilyMemberCard({ link, icon, name, description }: Fami
       target="_blank"
       rel="noopener noreferrer"
     >
-      <h2>{icon} <span>{name}</span></h2>
+      <h2>
+        {icon} <span>{name}</span>
+      </h2>
       <p>{description}</p>
     </a>
-  )
+  );
 }

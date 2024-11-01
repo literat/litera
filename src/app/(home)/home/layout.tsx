@@ -14,18 +14,12 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://litera.me'),
 };
 
-export default function HomeLayout({
-  children,
-}: {
-  children: ReactNode;
-}) {
+export default function HomeLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
         <Header />
-        <Inner>
-          {children}
-        </Inner>
+        <Inner>{children}</Inner>
       </body>
     </html>
   );

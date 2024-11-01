@@ -6,8 +6,8 @@ export default function Header() {
   return (
     <header>
       <div className={styles.bar}>
-      <Navigation />
-    </div>
+        <Navigation />
+      </div>
     </header>
-  )
+  );
 }
