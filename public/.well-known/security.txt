@@ -1,0 +1,4 @@
+Contact: mailto:tomas@litera.me
+Preferred-Languages: cs, en
+Canonical: https://www.litera.me/.well-known/security.txt
+Expires: 2026-01-01T00:00:00.000Z

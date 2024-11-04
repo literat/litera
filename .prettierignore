@@ -48,3 +48,6 @@ CODEOWNERS
 # Unformatted fixtures
 **/{fixtures}/**/unformatted*
 **/__fixtures__/unformatted*
+
+# Well Known Files
+**/.well-known/*
