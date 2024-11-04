@@ -1,0 +1,5 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "yarn prisma generate && yarn build",
+  "installCommand": "yarn install"
+}
