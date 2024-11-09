@@ -14,3 +14,19 @@ export async function fetchFits() {
     throw new Error('Failed to fetch the fits.');
   }
 }
+
+export async function fetchFit(id: string) {
+  try {
+    const fit = await db.fit.findUnique({
+      where: {
+        id,
+      },
+    });
+
+    return fit;
+  } catch (error) {
+    console.error('Database Error:', error);
+
+    throw new Error(`Failed to fetch the fit with id ${id}.`);
+  }
+}
