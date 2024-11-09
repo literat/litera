@@ -1,39 +1,20 @@
-import Link from 'next/link';
 import styles from './Fit.module.scss';
-import formatMoney from '@local/libs/formatMoney';
-import { FitTitle } from './FitTitle';
-import { FitPriceTag } from './FitPriceTag';
 import { Prisma } from '@prisma/client';
+import { fetchFit } from '@local/libs/data';
 
 interface FitProps {
-  fit: Prisma.FitUncheckedCreateInput;
+  id: string;
 }
 
-export function Fit({ fit }: FitProps) {
+export async function Fit({ id }: FitProps) {
+  const fit = (await fetchFit(id)) as Prisma.FitUncheckedCreateInput;
+
   return (
     <div className={styles.Fit}>
-      {/* {fit.image && <img src={fit.image} alt={fit.name} />} */}
-      <FitTitle>
-        <Link
-          href={{
-            pathname: `/home/fits/${fit.id}`,
-          }}
-        >
-          {fit.name}
-        </Link>
-      </FitTitle>
-      <FitPriceTag>
-        {fit.currentPrice && formatMoney(fit.currentPrice)}
-      </FitPriceTag>
-      <p>{fit.description}</p>
-      <div className="buttonList">
-        <Link
-          href={{
-            pathname: `/home/fits/${fit.id}/update`,
-          }}
-        >
-          Edit ✏️
-        </Link>
+      {/* <img src={item.largeImage} alt={item.title} /> */}
+      <div className="details">
+        <h2>Viewing {fit.name}</h2>
+        <p>{fit.description}</p>
       </div>
     </div>
   );
