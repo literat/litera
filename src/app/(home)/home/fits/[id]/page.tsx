@@ -23,7 +23,8 @@ export async function generateMetadata({
   };
 }
 
-export default async function FitPage({ params }: FitPageProps) {
+export default async function FitPage(props: FitPageProps) {
+  const params = await props.params;
   return (
     <main>
       <h1>Fits</h1>
