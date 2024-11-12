@@ -922,15 +922,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/client@npm:5.20.0":
-  version: 5.20.0
-  resolution: "@prisma/client@npm:5.20.0"
+"@prisma/client@npm:5.22.0":
+  version: 5.22.0
+  resolution: "@prisma/client@npm:5.22.0"
   peerDependencies:
     prisma: "*"
   peerDependenciesMeta:
     prisma:
       optional: true
-  checksum: 10/d5ad98e332be6f4a9df48399e25716c229779479603147ad7b7818966a1c8823307c18ae7513f48a95bb415f18ebfbaeb0707a3a0760a3d04e72577ab3152663
+  checksum: 10/991d7410ded2d6c824303ac222ae94df4f1bf42240dda97c710cfee3a3bc59fef65c73e1ee55177e38d12f4d7dfc0a047748f98b4e3026dddd65f462684cd2d1
   languageName: node
   linkType: hard
 
@@ -5733,7 +5733,7 @@ __metadata:
     "@commitlint/config-conventional": "npm:^19.5.0"
     "@lmc-eu/prettier-config": "npm:^2.0.1"
     "@lmc-eu/textlint-rule-preset-lmc": "npm:^2.0.1"
-    "@prisma/client": "npm:5.20.0"
+    "@prisma/client": "npm:5.22.0"
     "@types/node": "npm:18.19.64"
     "@types/react": "npm:types-react@19.0.0-rc.1"
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"

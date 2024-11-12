@@ -18,7 +18,7 @@
     "format:fix": "prettier --write ./"
   },
   "dependencies": {
-    "@prisma/client": "5.20.0",
+    "@prisma/client": "5.22.0",
     "@types/node": "18.19.64",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
