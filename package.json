@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@prisma/client": "5.20.0",
-    "@types/node": "18.19.62",
+    "@types/node": "18.19.64",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "eslint": "8.57.1",

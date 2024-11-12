@@ -1519,12 +1519,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.19.62":
-  version: 18.19.62
-  resolution: "@types/node@npm:18.19.62"
+"@types/node@npm:18.19.64":
+  version: 18.19.64
+  resolution: "@types/node@npm:18.19.64"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10/6b930cb754af87911c1e11e6e0e435ee1c16d42651df3f71d35526fc0e516780f2c1a6df12aa40cf7b503683d1b80ec8e5226ba02ff445a1957a02fce65a7769
+  checksum: 10/c6383d4f6f3b3f1d48234b2e71e20d1ead4ac4ee31bbca7ef8719eedd1e79a425b35952d4b1ba3eff0a4e3eebd37b8a6e85e9af3bb88aa7b3fdae9cb66630820
   languageName: node
   linkType: hard
 
@@ -5734,7 +5734,7 @@ __metadata:
     "@lmc-eu/prettier-config": "npm:^2.0.1"
     "@lmc-eu/textlint-rule-preset-lmc": "npm:^2.0.1"
     "@prisma/client": "npm:5.20.0"
-    "@types/node": "npm:18.19.62"
+    "@types/node": "npm:18.19.64"
     "@types/react": "npm:types-react@19.0.0-rc.1"
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
     commitlint: "npm:^19.5.0"
