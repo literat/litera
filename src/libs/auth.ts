@@ -29,7 +29,11 @@ export const { auth, signIn, signOut } = NextAuth({
             return null;
           }
 
-          const passwordsMatch = password === user.password; //await bcrypt.compare(password, user.password);
+          const passwordsMatch = await bcrypt.compare(
+            password,
+            // @ts-expect-error -- 'user.password' is possibly 'null'.
+            user.password.hash,
+          );
 
           if (passwordsMatch) {
             return user;
