@@ -6,5 +6,5 @@ interface FitPriceTagProps {
 }
 
 export function FitPriceTag({ children }: FitPriceTagProps) {
-  return <div className={styles.FitPriceTag}>{children}</div>;
+  return <span className={styles.FitPriceTag}>{children}</span>;
 }
