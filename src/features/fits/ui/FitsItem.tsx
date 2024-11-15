@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './Fit.module.scss';
+import styles from './FitsItem.module.scss';
 import formatMoney from '@local/features/fits/utils/formatMoney';
 import { FitTitle } from '@local/features/fits/ui/FitTitle';
 import { FitPriceTag } from '@local/features/fits/ui/FitPriceTag';
@@ -12,7 +12,7 @@ interface FitsItemProps {
 export function FitsItem({ fit }: FitsItemProps) {
   return (
     <div className={styles.FitsItem}>
-      {/* {fit.image && <img src={fit.image} alt={fit.name} />} */}
+      {fit.images[0] && <img src={fit.images[0].url} alt={fit.name} />}
       <FitTitle>
         <Link
           href={{
@@ -22,9 +22,9 @@ export function FitsItem({ fit }: FitsItemProps) {
           {fit.name}
         </Link>
       </FitTitle>
-      <FitPriceTag>
-        {fit.currentPrice && formatMoney(fit.currentPrice)}
-      </FitPriceTag>
+      {fit.currentPrice && (
+        <FitPriceTag>{formatMoney(fit.currentPrice)}</FitPriceTag>
+      )}
       <p>{fit.description}</p>
       <div className="buttonList">
         <Link

@@ -28,7 +28,6 @@ model Account {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])
-
   @@map(name: "accounts")
 }
 
@@ -49,7 +48,6 @@ model VerificationToken {
   expires    DateTime
 
   @@unique([identifier, token])
-
   @@map(name: "verification_tokens")
 }
 
@@ -89,4 +87,28 @@ model Fit {
   ownerId       String? @map(name: "owner_id")
 
   @@map(name: "fits")
+}
+
+model Image {
+  id        String          @id @default(cuid())
+  name      String
+  url       String?
+  createdAt DateTime        @default(now()) @map("created_at")
+  relations ImageRelation[]
+
+  @@map(name: "images")
+}
+
+model ImageRelation {
+  id         String @id @default(cuid())
+  image      Image  @relation(fields: [imageId], references: [id], onDelete: Cascade)
+  imageId    String
+  entityId   String // ID of the related record (Fit, Product, etc)
+  entityType String // Discriminator field ("Fit", "Product", etc)
+  sortOrder  Int    @default(0) // Optional: for ordering multiple images
+
+  // Add indexes for faster queries
+  @@index([entityId, entityType])
+  @@index([imageId])
+  @@map("image_relations")
 }
