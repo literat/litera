@@ -30,3 +30,21 @@ export async function fetchFit(id: string) {
     throw new Error(`Failed to fetch the fit with id ${id}.`);
   }
 }
+
+export async function createFit({ name, description, originalPrice }) {
+  try {
+    const fit = await db.fit.create({
+      data: {
+        name,
+        description,
+        originalPrice,
+      },
+    });
+
+    return fit;
+  } catch (error) {
+    console.error('Database Error:', error);
+
+    throw new Error(`Failed to create the fit`);
+  }
+}
