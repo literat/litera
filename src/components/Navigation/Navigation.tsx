@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './Navigation.module.scss';
+import Logout from '@local/features/login/Logout';
 
 export default function Navigation() {
   return (
@@ -10,6 +11,7 @@ export default function Navigation() {
       <Link href="/home/energy">Energy</Link>
       <Link href="/home/weather">Weather</Link>
       <Link href="/shop">Shop</Link>
+      <Logout />
     </ul>
   );
 }
