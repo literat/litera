@@ -1,4 +1,4 @@
-import { FamilyMemberCard } from '@local/ui/FamilyMemberCard';
+import { FamilyMemberCard } from '@local/features/homepage/ui/FamilyMemberCard';
 import styles from '@local/styles/Home.module.scss';
 
 export default function HomepagePage() {
