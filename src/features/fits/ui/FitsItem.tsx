@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styles from './Fit.module.scss';
-import formatMoney from '@local/libs/formatMoney';
+import formatMoney from '@local/features/fits/utils/formatMoney';
 import { FitTitle } from '@local/features/fits/ui/FitTitle';
 import { FitPriceTag } from '@local/features/fits/ui/FitPriceTag';
 import { Prisma } from '@prisma/client';
