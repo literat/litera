@@ -3,7 +3,7 @@
 import { Form } from '@local/components/Form';
 import { Error } from '@local/components/Error';
 import React, { useActionState } from 'react';
-import { authenticate } from './actions/authenticate';
+import { authenticate } from '@local/features/auth/actions/authenticate';
 import { useFormStatus } from 'react-dom';
 
 export default function LoginForm() {
