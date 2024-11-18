@@ -1,5 +1,10 @@
 import { FamilyMemberCard } from '@local/features/homepage/ui/FamilyMemberCard';
-import styles from '@local/styles/Home.module.scss';
+import styles from '@local/features/homepage/ui/Home.module.scss';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Homepage',
+};
 
 export default function HomepagePage() {
   return (
