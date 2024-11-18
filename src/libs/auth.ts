@@ -21,9 +21,7 @@ export const { auth, signIn, signOut } = NextAuth({
 
         if (parsedCredentials.success) {
           const { email, password } = parsedCredentials.data;
-          const user = {
-            password: 'Jahoda123',
-          }; //await fetchUserByMail(email);
+          const user = await fetchUserByMail(email);
 
           if (!user) {
             return null;
