@@ -1,4 +1,4 @@
-import { Columns } from '@local/components/Columns';
+import { Columns } from '@local/ui/Columns';
 import LoginForm from '@local/features/auth/LoginForm';
 import { Metadata } from 'next';
 import React from 'react';

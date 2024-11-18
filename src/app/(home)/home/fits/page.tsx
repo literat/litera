@@ -1,4 +1,4 @@
-import { FitsSkeleton, Fits } from '@local/features/fits';
+import { FitsSkeleton, Fits } from '@local/features/fits/ui';
 import { Suspense } from 'react';
 
 export default async function FitsPage() {

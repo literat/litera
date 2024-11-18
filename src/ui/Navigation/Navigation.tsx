@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './Navigation.module.scss';
-import Logout from '@local/features/auth/Logout';
+import Logout from '@local/features/auth/ui/Logout';
 
 export default function Navigation() {
   return (

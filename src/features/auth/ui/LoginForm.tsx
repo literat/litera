@@ -1,7 +1,7 @@
 'use client';
 
-import { Form } from '@local/components/Form';
-import { Error } from '@local/components/Error';
+import { Form } from '@local/ui/Form';
+import { Error } from '@local/ui/Error';
 import React, { useActionState } from 'react';
 import { authenticate } from '@local/features/auth/actions/authenticate';
 import { useFormStatus } from 'react-dom';
