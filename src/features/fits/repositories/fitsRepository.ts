@@ -1,7 +1,7 @@
 import db from '@local/libs/db';
 import { unstable_noStore as noStore } from 'next/cache';
 
-export async function fetchFits() {
+export async function fetchAllFits() {
   noStore();
 
   try {
@@ -15,7 +15,7 @@ export async function fetchFits() {
   }
 }
 
-export async function fetchFit(id: string) {
+export async function fetchFitById(id: string) {
   try {
     const fit = await db.fit.findUnique({
       where: {

@@ -1,4 +1,4 @@
-import { signOut } from '@local/features/auth/services/auth';
+import { signOut } from '@local/features/auth/services/authService';
 
 export const logout = async () => {
   'use server';
