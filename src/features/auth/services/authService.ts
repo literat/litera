@@ -2,7 +2,7 @@ import bcrypt from 'bcrypt';
 import NextAuth from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
 import { z } from 'zod';
-import { fetchUserByMail } from '@local/features/auth/services/user';
+import { fetchUserByMail } from '@local/features/auth/repositories/userRepository';
 import { authConfig } from './auth.config';
 
 export const { auth, signIn, signOut } = NextAuth({

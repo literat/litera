@@ -2,7 +2,7 @@
 
 import { z } from 'zod';
 import { redirect } from 'next/navigation';
-import { signIn } from '@local/features/auth/services/auth';
+import { signIn } from '@local/features/auth/services/authService';
 
 export async function authenticate(
   prevState: string | undefined,

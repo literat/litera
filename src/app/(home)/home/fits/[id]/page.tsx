@@ -2,7 +2,7 @@ import { FitSkeleton } from '@local/features/fits/ui';
 import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import { Fit } from '@local/features/fits/ui/Fit';
-import { fetchFit } from '@local/libs/data';
+import { fetchFitById } from '@local/features/fits/repositories/fitsRepository';
 import { Prisma } from '@prisma/client';
 
 type FitPageProps = {
@@ -13,7 +13,7 @@ export async function generateMetadata({
   params,
 }: FitPageProps): Promise<Metadata> {
   const id = (await params).id;
-  const { name, description } = (await fetchFit(
+  const { name, description } = (await fetchFitById(
     id,
   )) as Prisma.FitUncheckedCreateInput;
 

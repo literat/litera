@@ -1,13 +1,13 @@
 import styles from './Fit.module.scss';
 import { Prisma } from '@prisma/client';
-import { fetchFit } from '@local/libs/data';
+import { fetchFitById } from '@local/features/fits/repositories/fitsRepository';
 
 interface FitProps {
   id: string;
 }
 
 export async function Fit({ id }: FitProps) {
-  const fit = (await fetchFit(id)) as Prisma.FitUncheckedCreateInput;
+  const fit = (await fetchFitById(id)) as Prisma.FitUncheckedCreateInput;
 
   return (
     <div className={styles.Fit}>
