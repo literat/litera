@@ -1,5 +1,5 @@
 import { Columns } from '@local/ui/Columns';
-import LoginForm from '@local/features/auth/LoginForm';
+import LoginForm from '@local/features/auth/ui/LoginForm';
 import { Metadata } from 'next';
 import React from 'react';
 
