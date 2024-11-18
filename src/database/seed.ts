@@ -1,7 +1,7 @@
 import { faker } from '@faker-js/faker';
-import prisma from '@local/libs/db';
+import db from '@local/database/client';
 import bcrypt from 'bcrypt';
-import { users } from './samples';
+import { users } from './seeds/users';
 
 export function createPassword(password: string = faker.internet.password()) {
   return {
@@ -15,7 +15,7 @@ async function seedUsers() {
 
     const insertedUsers = await Promise.all(
       users.map(async (user) => {
-        return prisma.user.create({
+        return db.user.create({
           select: { id: true },
           data: {
             ...user,
@@ -54,5 +54,5 @@ seed()
     process.exit(1);
   })
   .finally(async () => {
-    await prisma.$disconnect();
+    await db.$disconnect();
   });

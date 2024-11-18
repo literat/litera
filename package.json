@@ -55,8 +55,8 @@
   },
   "packageManager": "yarn@4.5.1",
   "prisma": {
-    "schema": "src/db/schema.prisma",
-    "seed": "tsx src/db/seed.ts"
+    "schema": "src/database/schema.prisma",
+    "seed": "tsx src/database/seed.ts"
   },
   "resolutions": {
     "@types/react": "npm:types-react@19.0.0-rc.1",
