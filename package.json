@@ -50,11 +50,13 @@
     "prisma": "^5.22.0",
     "sass-embedded": "^1.80.6",
     "textlint": "^14.3.0",
+    "tsx": "^4.19.2",
     "vercel": "^37.7.1"
   },
   "packageManager": "yarn@4.5.1",
   "prisma": {
-    "schema": "src/db/schema.prisma"
+    "schema": "src/db/schema.prisma",
+    "seed": "tsx src/db/seed.ts"
   },
   "resolutions": {
     "@types/react": "npm:types-react@19.0.0-rc.1",
