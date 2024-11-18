@@ -1,4 +1,4 @@
-import db from '@local/libs/db';
+import db from '@local/database/client';
 import { unstable_noStore as noStore } from 'next/cache';
 
 export async function fetchAllFits() {
