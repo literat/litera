@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import styles from './Fit.module.scss';
 import formatMoney from '@local/libs/formatMoney';
-import { FitTitle } from './FitTitle';
-import { FitPriceTag } from './FitPriceTag';
+import { FitTitle } from '@local/features/fits/ui/FitTitle';
+import { FitPriceTag } from '@local/features/fits/ui/FitPriceTag';
 import { Prisma } from '@prisma/client';
 
 interface FitsItemProps {

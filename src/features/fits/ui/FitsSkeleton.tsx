@@ -1,5 +1,5 @@
 export function FitSkeleton() {
-  return <div></div>;
+  return <div>Loading...</div>;
 }
 
 export function FitsSkeleton() {

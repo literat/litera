@@ -1,7 +1,7 @@
-import { FitSkeleton } from '@local/features/fits';
+import { FitSkeleton } from '@local/features/fits/ui';
 import { Suspense } from 'react';
 import type { Metadata } from 'next';
-import { Fit } from '@local/features/fits/Fit';
+import { Fit } from '@local/features/fits/ui/Fit';
 import { fetchFit } from '@local/libs/data';
 import { Prisma } from '@prisma/client';
 
