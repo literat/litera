@@ -6491,7 +6491,7 @@ __metadata:
     prettier: "npm:^3.3.3"
     prettier-plugin-toml: "npm:^2.0.1"
     prisma: "npm:^5.22.0"
-    react: "npm:19.0.0-rc-fb9a90fa48-20240614"
+    react: "npm:19.0.0"
     react-dom: "npm:19.0.0-rc-fb9a90fa48-20240614"
     sass: "npm:^1.57.1"
     sass-embedded: "npm:^1.80.6"
@@ -8378,10 +8378,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:19.0.0-rc-fb9a90fa48-20240614":
-  version: 19.0.0-rc-fb9a90fa48-20240614
-  resolution: "react@npm:19.0.0-rc-fb9a90fa48-20240614"
-  checksum: 10/a1e9eb61546620c3dc306969bf711969f22b9ca87e07e8dc728015dafdd628c4d32cd2e6e757b27a4876cb22f0d0ae892944445de02833cd874582f9c9811bf2
+"react@npm:19.0.0":
+  version: 19.0.0
+  resolution: "react@npm:19.0.0"
+  checksum: 10/2490969c503f644703c88990d20e4011fa6119ddeca451e9de48f6d7ab058d670d2852a5fcd3aa3cd90a923ab2815d532637bd4a814add402ae5c0d4f129ee71
   languageName: node
   linkType: hard
 
