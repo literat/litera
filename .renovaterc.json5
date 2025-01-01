@@ -4,4 +4,12 @@
     'local>literat/renovate-config',
     'local>literat/renovate-config:scheduleEveryTwoWeeksNonOfficeHours',
   ],
+  packageRules: [
+    {
+      groupName: 'monorepo:react non-major',
+      groupSlug: 'monorepo-react-non-major',
+      matchPackagePatterns: ['^react'],
+      matchUpdateTypes: ['minor', 'patch'],
+    },
+  ],
 }
