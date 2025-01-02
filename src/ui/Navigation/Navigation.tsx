@@ -8,9 +8,12 @@ export default function Navigation() {
     <ul className={styles.navigation}>
       <Link href="/home">Home</Link>
       <Link href="/home/fits">Fits</Link>
-      <Link href="/home/energy">Energy</Link>
-      <Link href="/home/weather">Weather</Link>
-      <Link href="/shop">Shop</Link>
+      {/* @see https://github.com/literat/litera/issues/70 */}
+      {/* <Link href="/home/energy">Energy</Link> */}
+      {/* @see https://github.com/literat/litera/issues/71 */}
+      {/* <Link href="/home/weather">Weather</Link> */}
+      {/* @see https://github.com/literat/litera/issues/69 */}
+      {/* <Link href="/shop">Shop</Link> */}
       <Logout />
     </ul>
   );
