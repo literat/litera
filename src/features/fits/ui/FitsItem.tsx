@@ -5,8 +5,8 @@ import styles from './FitsItem.module.scss';
 import formatMoney from '@local/features/fits/utils/formatMoney';
 import { FitTitle } from '@local/features/fits/ui/FitTitle';
 import { FitPriceTag } from '@local/features/fits/ui/FitPriceTag';
-import { Prisma } from '@prisma/client';
 import { CldImage as Image } from 'next-cloudinary';
+import { SegmentedControl } from '@local/ui/SegmentedControl';
 
 interface FitsItemProps {
   fit: any;
@@ -36,7 +36,7 @@ export function FitsItem({ fit }: FitsItemProps) {
         <FitPriceTag>{formatMoney(fit.currentPrice)}</FitPriceTag>
       )}
       <p>{fit.description}</p>
-      <div className="buttonList">
+      <SegmentedControl>
         <Link
           href={{
             pathname: `/home/fits/${fit.id}/update`,
@@ -44,7 +44,7 @@ export function FitsItem({ fit }: FitsItemProps) {
         >
           Edit ✏️
         </Link>
-      </div>
+      </SegmentedControl>
     </div>
   );
 }
