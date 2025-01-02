@@ -9,13 +9,13 @@ import { Prisma } from '@prisma/client';
 import { CldImage as Image } from 'next-cloudinary';
 
 interface FitsItemProps {
-  fit: Prisma.FitUncheckedCreateInput;
+  fit: any;
 }
 
 export function FitsItem({ fit }: FitsItemProps) {
   return (
     <div className={styles.FitsItem}>
-      {fit.images[0] && (
+      {fit?.images[0] && (
         <Image
           src={fit.images[0].url}
           alt={fit.name}

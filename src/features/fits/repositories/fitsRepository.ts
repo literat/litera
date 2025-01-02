@@ -1,6 +1,32 @@
 import db from '@local/database/client';
 import { unstable_noStore as noStore } from 'next/cache';
 
+type FitImage = {
+  id: string;
+  name: string;
+  url: string | null;
+  createdAt: Date;
+};
+type UploadedIages = { name: string; url: string };
+
+type FitValues = {
+  name: string;
+  description: string;
+  originalPrice: number;
+};
+
+type Fit = {
+  id: string;
+} & FitValues;
+
+type FitWithImages = Fit & {
+  images: FitImage[];
+};
+
+type NewFit = FitValues & {
+  images: UploadedIages[];
+};
+
 export async function fetchAllFits() {
   noStore();
 
@@ -37,7 +63,10 @@ export async function fetchFitById(id: string) {
       },
     });
 
-    const fitImages = await fetchFitImages(fit.id);
+    let fitImages: FitImage[] = [];
+    if (fit !== null && fit.id !== null) {
+      fitImages = await fetchFitImages(fit.id);
+    }
 
     return { ...fit, images: fitImages };
   } catch (error) {
@@ -61,7 +90,12 @@ export async function fetchFitImages(fitId: string) {
   return fitImages.map((img) => img.image);
 }
 
-export async function createFit({ name, description, originalPrice, images }) {
+export async function createFit({
+  name,
+  description,
+  originalPrice,
+  images,
+}: NewFit) {
   try {
     const result = await db.$transaction(async (tx) => {
       const fit = await tx.fit.create({
