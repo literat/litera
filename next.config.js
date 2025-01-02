@@ -9,6 +9,12 @@ const nextConfig = {
        */
       bodySizeLimit: '2mb',
     },
+    /**
+     * Enable statically typed links
+     *
+     * @see { @link https://nextjs.org/docs/app/api-reference/config/typescript#statically-typed-links }
+     */
+    typedRoutes: true,
   },
   reactStrictMode: true,
   sassOptions: {
