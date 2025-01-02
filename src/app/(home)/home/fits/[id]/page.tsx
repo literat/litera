@@ -24,13 +24,14 @@ export async function generateMetadata({
 }
 
 export default async function FitPage(props: FitPageProps) {
-  const params = await props.params;
+  const { id } = await props.params;
+  const fit = await fetchFitById(id);
+
   return (
     <main>
       <h1>Fits</h1>
       <Suspense fallback={<FitSkeleton />}>
-        {/* @ts-ignore Server Component */}
-        <Fit id={params.id} />
+        <Fit fit={fit} />
       </Suspense>
     </main>
   );

@@ -1,14 +1,10 @@
+'use client';
+
 import styles from './Fit.module.scss';
-import { Prisma } from '@prisma/client';
-import { fetchFitById } from '@local/features/fits/repositories/fitsRepository';
-import Image from 'next/image';
+import { CldImage as Image } from 'next-cloudinary';
 
-interface FitProps {
-  id: string;
-}
-
-export async function Fit({ id }: FitProps) {
-  const { images, name, description } = await fetchFitById(id);
+export function Fit({ fit }) {
+  const { images, name, description } = fit;
 
   return (
     <div className={styles.Fit}>
