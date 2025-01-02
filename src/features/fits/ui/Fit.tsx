@@ -3,7 +3,7 @@
 import styles from './Fit.module.scss';
 import { CldImage as Image } from 'next-cloudinary';
 
-export function Fit({ fit }) {
+export function Fit({ fit }: any) {
   const { images, name, description } = fit;
 
   return (

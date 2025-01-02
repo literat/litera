@@ -21,6 +21,8 @@ export type State = {
   message?: string | null;
 };
 
+type CloudinaryUploadResult = { original_filename: string; secure_url: string };
+
 const FormSchema = z.object({
   id: z.string(),
   // status: z.enum(['pending', 'paid'], {
@@ -57,24 +59,28 @@ export async function createFitAction(prevState: State, formData: FormData) {
 
   const arrayBuffer = await image.arrayBuffer();
   const buffer = new Uint8Array(arrayBuffer);
-  const uploadResult = await new Promise((resolve, reject) => {
-    cloudinary.uploader
-      .upload_stream(
-        {
-          folder: 'litera-me',
-          tags: ['fits'],
-        },
-        function (error, result) {
-          if (error) {
-            reject(error);
-            return;
-          }
+  const uploadResult: CloudinaryUploadResult = await new Promise(
+    (resolve, reject) => {
+      cloudinary.uploader
+        .upload_stream(
+          {
+            folder: 'litera-me',
+            tags: ['fits'],
+          },
+          function (error, result) {
+            if (error) {
+              reject(error);
+              return;
+            }
 
-          resolve(result);
-        },
-      )
-      .end(buffer);
-  });
+            resolve(
+              result as { original_filename: string; secure_url: string },
+            );
+          },
+        )
+        .end(buffer);
+    },
+  );
 
   const images = [
     {
@@ -85,6 +91,8 @@ export async function createFitAction(prevState: State, formData: FormData) {
 
   try {
     const fit = await createFit({ name, description, originalPrice, images });
+
+    return fit;
   } catch (error) {
     console.log(error);
     return {

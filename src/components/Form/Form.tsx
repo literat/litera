@@ -3,7 +3,8 @@ import styles from './Form.module.scss';
 
 interface FormProps {
   children: ReactNode;
-  rest: any;
+  // All other props
+  [restProps: string]: any;
 }
 
 export default function Form({ children, ...rest }: FormProps) {

@@ -8,7 +8,11 @@ import React, { useActionState } from 'react';
 export function CreateFit() {
   const router = useRouter();
 
-  const initialState = { message: null, errors: {} };
+  const initialState: { message: string; errors: Record<string, any> } = {
+    message: '',
+    errors: {},
+  };
+  // @ts-expect-error -- No overload matches this call.
   const [state, dispatch] = useActionState(createFitAction, initialState);
 
   return (
@@ -59,6 +63,7 @@ export function CreateFit() {
         </label>
         <button type="submit">Submit</button>
       </fieldset>
+      {/* @ts-expect-error -- message does not exist on state */}
       {state.message && <p>{state.message}</p>}
     </Form>
   );
