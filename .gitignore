@@ -25,3 +25,6 @@ phploy.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# TypeScript
+tsconfig.tsbuildinfo
