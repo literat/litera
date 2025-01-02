@@ -18,7 +18,8 @@
     "lint:text:fix": "yarn lint:text --fix",
     "format": "yarn format:check",
     "format:check": "prettier --check ./",
-    "format:fix": "prettier --write ./"
+    "format:fix": "prettier --write ./",
+    "types": "tsc"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.7",
