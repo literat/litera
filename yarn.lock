@@ -167,12 +167,12 @@ __metadata:
   linkType: hard
 
 "@commitlint/config-conventional@npm:^19.5.0":
-  version: 19.5.0
-  resolution: "@commitlint/config-conventional@npm:19.5.0"
+  version: 19.7.1
+  resolution: "@commitlint/config-conventional@npm:19.7.1"
   dependencies:
     "@commitlint/types": "npm:^19.5.0"
     conventional-changelog-conventionalcommits: "npm:^7.0.2"
-  checksum: 10/5844fb51347677dd28f970a50528fbc44b9b415a8a5fd6fea6c7f6a2a11357956748eda9d1d6ae499430659b0aa78bfa7dcf8abf599951e7f34a581e60bf57da
+  checksum: 10/fce984d36e1a721bbbb466f67b5ec6634fbbf7626fbb9c53bdf3cca8810c4350c7cbce8c93627d1107398b61b14373dea34cd344fc9244c2834133b93569081a
   languageName: node
   linkType: hard
 
