@@ -26,7 +26,7 @@
     "@prisma/client": "5.22.0",
     "@types/node": "18.19.75",
     "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0",
     "bcrypt": "^5.1.1",
     "cloudinary": "^2.5.1",
     "eslint": "8.57.1",
