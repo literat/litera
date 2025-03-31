@@ -62,7 +62,7 @@
     "tsx": "^4.19.2",
     "vercel": "^37.7.1"
   },
-  "packageManager": "yarn@4.6.0",
+  "packageManager": "yarn@4.8.1",
   "prisma": {
     "schema": "src/database/schema.prisma",
     "seed": "tsx src/database/seed.ts"
