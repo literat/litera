@@ -30,7 +30,7 @@
     "bcrypt": "^5.1.1",
     "cloudinary": "^2.5.1",
     "eslint": "8.57.1",
-    "eslint-config-next": "15.1.6",
+    "eslint-config-next": "15.2.4",
     "next": "15.1.6",
     "next-auth": "^5.0.0-beta.25",
     "next-cloudinary": "^6.16.0",
