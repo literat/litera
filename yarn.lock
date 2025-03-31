@@ -8359,13 +8359,13 @@ __metadata:
   linkType: hard
 
 "prettier-plugin-toml@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "prettier-plugin-toml@npm:2.0.1"
+  version: 2.0.3
+  resolution: "prettier-plugin-toml@npm:2.0.3"
   dependencies:
     "@taplo/lib": "npm:^0.4.0-alpha.2"
   peerDependencies:
     prettier: ^3.0.3
-  checksum: 10/cf6a6c4f386390d74924eaacff86d3ef97369749b986fe3b5229466e896ada9f6da4a4fef44059062ffebf6f9a25530d563cba73da2ba2aac0eee27b4fc8c279
+  checksum: 10/b025a885dfcba029eb21a05007aa38e4f9e958a2cae8ad669ad73f5efdeed334ddcb66f553eeb5ed4d3b5e709a67a9170469b3b0596fad77fb0124640feda6cb
   languageName: node
   linkType: hard
 
