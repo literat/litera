@@ -919,8 +919,8 @@ __metadata:
   linkType: hard
 
 "@lmc-eu/textlint-rule-preset-lmc@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@lmc-eu/textlint-rule-preset-lmc@npm:2.0.1"
+  version: 2.0.2
+  resolution: "@lmc-eu/textlint-rule-preset-lmc@npm:2.0.2"
   dependencies:
     textlint: "npm:^12.2.2"
     textlint-filter-rule-comments: "npm:^1.2.2"
@@ -932,7 +932,7 @@ __metadata:
     textlint-rule-write-good: "npm:^2.0.0"
   peerDependencies:
     textlint: ^12.2.2
-  checksum: 10/cd1c226ab0b7c0fe513cae85ed94a5c159b22126a40b1afdddccec55e55aef3c3fba82e405e38607987b57a8873562400d608657be8601f2f8c86384d74c9719
+  checksum: 10/c43d41b838041a04cc4464275eedc3a8518cadeec7252d5553a6ec16888a4409ad59f70c90549d898a0278eabba28d7be7a12c10618d3233c1e8013f2aefe084
   languageName: node
   linkType: hard
 
