@@ -3056,12 +3056,12 @@ __metadata:
   linkType: hard
 
 "cloudinary@npm:^2.5.1":
-  version: 2.5.1
-  resolution: "cloudinary@npm:2.5.1"
+  version: 2.6.0
+  resolution: "cloudinary@npm:2.6.0"
   dependencies:
     lodash: "npm:^4.17.21"
     q: "npm:^1.5.1"
-  checksum: 10/182708d3101078812a2a56e57ac85f745d1ac651cef8b18d5c818cafc15d8fd89634d469d71ab0680bb16f6ff3cf72c4d6331ebe8d0768ed78efc388b43dc93c
+  checksum: 10/362643e47f453a467c891fe94518a7203b0367c1c0b7c81dc299790339cf67def5724cdcb5d8276557e6a0e89ffc9d84e6306e4e2e50449d4807fe2059e2888f
   languageName: node
   linkType: hard
 
