@@ -1830,12 +1830,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.19.84":
-  version: 18.19.84
-  resolution: "@types/node@npm:18.19.84"
+"@types/node@npm:18.19.87":
+  version: 18.19.87
+  resolution: "@types/node@npm:18.19.87"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10/b832d0dcba210327fd5ed8bfbf85e22128b0cd0c1ed13cb75692780b60298ccb6945634d503842b932cc71e1f2879689bf5ad73826cc18d909b191c228c863b0
+  checksum: 10/1e71b6d16dedeaa1fd5ff55baf1f353ca1f9e673b2e482d7fe82fa685addea5159a36602a344784c989b5e07ca1be633d0c493adf5951dee5a29cee69d613e7f
   languageName: node
   linkType: hard
 
@@ -6584,7 +6584,7 @@ __metadata:
     "@next-auth/prisma-adapter": "npm:^1.0.7"
     "@prisma/client": "npm:5.22.0"
     "@types/bcrypt": "npm:^5"
-    "@types/node": "npm:18.19.84"
+    "@types/node": "npm:18.19.87"
     "@types/react": "npm:types-react@19.0.0-rc.1"
     "@types/react-dom": "npm:types-react-dom@19.0.0"
     bcrypt: "npm:^5.1.1"
