@@ -1329,19 +1329,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@taplo/core@npm:^0.1.0":
-  version: 0.1.1
-  resolution: "@taplo/core@npm:0.1.1"
-  checksum: 10/e4d5dd2a80c6bead07692d1b0e8f506b91b3474768aca7373d4dff94ad82f3d78e5401f46ca194343c63f474a69fc32cbb272570d506a995eab2214f88e66866
+"@taplo/core@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@taplo/core@npm:0.2.0"
+  checksum: 10/5fd723a337600f3e1beaccc379c0dc6d3a7577edc5b9d2dcba31a525e7ef4b769d2c80bdd2376a9d9baa1e93d35089721aca5a989c265cdaa08bb6e0630a5701
   languageName: node
   linkType: hard
 
-"@taplo/lib@npm:^0.4.0-alpha.2":
-  version: 0.4.0-alpha.2
-  resolution: "@taplo/lib@npm:0.4.0-alpha.2"
+"@taplo/lib@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "@taplo/lib@npm:0.5.0"
   dependencies:
-    "@taplo/core": "npm:^0.1.0"
-  checksum: 10/926a31b2310f07172362f91f366617f9f94784f7fa1227c62e0753a034d885798bfcbd3cf73984148e42b6eda7c34fae235649f2cd71a84226caf17f1c35a73c
+    "@taplo/core": "npm:^0.2.0"
+  checksum: 10/b0125571ac97a8820035edae947b1091634b5746d8f8c00bedf3d689884ea9f7b47e07d7a1f20098012ca5743a9aba59b015ac63da7f7d8f35e8e6da48217161
   languageName: node
   linkType: hard
 
@@ -8347,13 +8347,13 @@ __metadata:
   linkType: hard
 
 "prettier-plugin-toml@npm:^2.0.1":
-  version: 2.0.3
-  resolution: "prettier-plugin-toml@npm:2.0.3"
+  version: 2.0.4
+  resolution: "prettier-plugin-toml@npm:2.0.4"
   dependencies:
-    "@taplo/lib": "npm:^0.4.0-alpha.2"
+    "@taplo/lib": "npm:^0.5.0"
   peerDependencies:
     prettier: ^3.0.3
-  checksum: 10/b025a885dfcba029eb21a05007aa38e4f9e958a2cae8ad669ad73f5efdeed334ddcb66f553eeb5ed4d3b5e709a67a9170469b3b0596fad77fb0124640feda6cb
+  checksum: 10/9df8142cb4eff5d85b4231b4b5cd372c4dfba7ce9a573670aba99823b494ec440b9b89db7ab0777849ca39ea0e85feab59682dd49b9094101dfc9572ac02665f
   languageName: node
   linkType: hard
 
