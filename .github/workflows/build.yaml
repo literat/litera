@@ -1,0 +1,37 @@
+name: 🏗️ Build
+
+on:
+  # Run this workflow on push to branches only (not tags)
+  push:
+    branches:
+      - '**'
+
+jobs:
+  build:
+    name: 👷 Building on Node.js ${{ matrix.node-version }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        # supporting primarily LTS
+        node-version: [22, 24]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup and Install
+        uses: ./.github/actions/setup-install
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Build packages
+        run: yarn build
+
+      - name: Check for clean working directory
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "Error: Git working directory is not clean"
+            git status
+            exit 1
+          fi
