@@ -9,6 +9,14 @@ inputs:
 runs:
   using: 'composite'
   steps:
+    - name: Restore Cache
+      uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+      with:
+        path: ./.yarn/cache
+        key: ${{ runner.os }}-Yarn-main
+        restore-keys: |
+          ${{ runner.os }}-Yarn-main-
+
     - name: Setup Node
       uses: ./.github/actions/setup-node
       with:

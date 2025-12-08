@@ -6,6 +6,14 @@ inputs:
     description: 'Node.js version to use. If not provided, version is read from .node-version file'
     required: false
 
+  cache:
+    description: 'Used to specify a package manager for caching in the default directory'
+    required: false
+
+  cache-dependency-path:
+    description: 'Used to specify the path to a dependency file'
+    required: false
+
 runs:
   using: 'composite'
   steps:
@@ -18,5 +26,5 @@ runs:
       with:
         node-version: ${{ inputs.node-version }}
         node-version-file: ${{ inputs.node-version == '' && '.node-version' || '' }}
-        cache: 'yarn'
-        cache-dependency-path: yarn.lock
+        cache: ${{ inputs.cache }}
+        cache-dependency-path: ${{ inputs.cache-dependency-path }}
