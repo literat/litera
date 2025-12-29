@@ -25,6 +25,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Generate Prisma Client
+        run: yarn prisma generate
+
       - name: Build packages
         run: yarn build
 
