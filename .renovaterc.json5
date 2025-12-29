@@ -3,7 +3,9 @@
   extends: [
     'local>literat/renovate-config',
     'local>literat/renovate-config:scheduleEveryTwoWeeksNonOfficeHours',
+    ':dependencyDashboard',
   ],
+  commitMessagePrefix: 'chore(deps): ',
   packageRules: [
     {
       groupName: 'monorepo:react non-major',
