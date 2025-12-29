@@ -6582,6 +6582,9 @@ __metadata:
     typescript: "npm:4.9.5"
     vercel: "npm:^37.7.1"
     zod: "npm:^3.23.8"
+  dependenciesMeta:
+    bcrypt:
+      built: true
   languageName: unknown
   linkType: soft
 
