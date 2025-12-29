@@ -5,9 +5,9 @@ __metadata:
   version: 8
   cacheKey: 10
 
-"@auth/core@npm:0.39.0":
-  version: 0.39.0
-  resolution: "@auth/core@npm:0.39.0"
+"@auth/core@npm:0.41.0":
+  version: 0.41.0
+  resolution: "@auth/core@npm:0.41.0"
   dependencies:
     "@panva/hkdf": "npm:^1.2.1"
     jose: "npm:^6.0.6"
@@ -25,7 +25,7 @@ __metadata:
       optional: true
     nodemailer:
       optional: true
-  checksum: 10/c1bd99bfdcd50d5b35adb69f5bf58a91a4322454a8cf9b70aed57f0f670bc88cd1e877eb7fc7a936abc52797a4ee6f5057af1ce31c390afc56ed26fc0b7681c1
+  checksum: 10/5810ce4b0080da5c6a93ffe0e7120982cbb30a41bb4a28b4b0230fb2a66c071d35e320e73694a1024445b04936862a6b0af7542a3ee536ad1c0a2421e7e3cc8d
   languageName: node
   linkType: hard
 
@@ -7361,16 +7361,16 @@ __metadata:
   linkType: hard
 
 "next-auth@npm:^5.0.0-beta.25":
-  version: 5.0.0-beta.27
-  resolution: "next-auth@npm:5.0.0-beta.27"
+  version: 5.0.0-beta.30
+  resolution: "next-auth@npm:5.0.0-beta.30"
   dependencies:
-    "@auth/core": "npm:0.39.0"
+    "@auth/core": "npm:0.41.0"
   peerDependencies:
     "@simplewebauthn/browser": ^9.0.1
     "@simplewebauthn/server": ^9.0.2
-    next: ^14.0.0-0 || ^15.0.0-0
-    nodemailer: ^6.6.5
-    react: ^18.2.0 || ^19.0.0-0
+    next: ^14.0.0-0 || ^15.0.0 || ^16.0.0
+    nodemailer: ^7.0.7
+    react: ^18.2.0 || ^19.0.0
   peerDependenciesMeta:
     "@simplewebauthn/browser":
       optional: true
@@ -7378,7 +7378,7 @@ __metadata:
       optional: true
     nodemailer:
       optional: true
-  checksum: 10/0fd49c142b0eba2221c6cca57ee4a179fdc7a9ac9c876e871a84f49bf312ee473481ed98d0c0646095b555a9b2d13cf096f417bedacbd6d297f69a08b8bc1ee2
+  checksum: 10/0b6c5bfa26db6d95ddebc95dc7b8d27727cffeb190825261144ab31261085533cf97853dfc1e4ea4f77fea8fb1f391ae64f159f5e233db52e7ed9aac5cbbce7c
   languageName: node
   linkType: hard
 
