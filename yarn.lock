@@ -3064,12 +3064,11 @@ __metadata:
   linkType: hard
 
 "cloudinary@npm:^2.5.1":
-  version: 2.8.0
-  resolution: "cloudinary@npm:2.8.0"
+  version: 2.9.0
+  resolution: "cloudinary@npm:2.9.0"
   dependencies:
     lodash: "npm:^4.17.21"
-    q: "npm:^1.5.1"
-  checksum: 10/cd03d06c822047bc1aa40eee11ce3e4f77bce81b77fb135b6814c959955cf456b2553cd1dc53d14cae9505191cf52cdb2e916e9d1871908eb30688bed57b0a0c
+  checksum: 10/fe54867526e126fc95e250fddebf22cab65a9d1f348160defb5eac5d3bca5b3e7feb8e02950afe3a7328bdf5723f714d5008a460a540dde5cb3039488c044555
   languageName: node
   linkType: hard
 
@@ -8412,13 +8411,6 @@ __metadata:
   version: 2.1.1
   resolution: "punycode@npm:2.1.1"
   checksum: 10/939daa010c2cacebdb060c40ecb52fef0a739324a66f7fffe0f94353a1ee83e3b455e9032054c4a0c4977b0a28e27086f2171c392832b59a01bd948fd8e20914
-  languageName: node
-  linkType: hard
-
-"q@npm:^1.5.1":
-  version: 1.5.1
-  resolution: "q@npm:1.5.1"
-  checksum: 10/70c4a30b300277165cd855889cd3aa681929840a5940413297645c5691e00a3549a2a4153131efdf43fe8277ee8cf5a34c9636dcb649d83ad47f311a015fd380
   languageName: node
   linkType: hard
 
