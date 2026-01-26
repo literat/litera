@@ -7376,8 +7376,8 @@ __metadata:
   linkType: hard
 
 "next-cloudinary@npm:^6.16.0":
-  version: 6.16.0
-  resolution: "next-cloudinary@npm:6.16.0"
+  version: 6.17.5
+  resolution: "next-cloudinary@npm:6.17.5"
   dependencies:
     "@cloudinary-util/types": "npm:1.5.10"
     "@cloudinary-util/url-loader": "npm:5.10.4"
@@ -7385,7 +7385,7 @@ __metadata:
   peerDependencies:
     next: ^12 || ^13 || ^14 || >=15.0.0-rc || ^15
     react: ^17 || ^18 || >=19.0.0-beta || ^19
-  checksum: 10/31b7d5221c3a5125ffa0bdfbc810c34b6904d2330ca67232155a43c75a234b08c3cc16ae5ecc60090e6242b99e577bdb56cbcb7e92d8febe0baa74011169779a
+  checksum: 10/6634901f6223972c2fe2f192ceb673f2bc04d35bc759e8372221f11dd3637199046ce71b70de8ea8f1be5e9805321f034e5814b607ee809b165e9661b0c3905f
   languageName: node
   linkType: hard
 
