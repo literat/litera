@@ -1,17 +1,17 @@
 {
-  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
   extends: [
-    'local>literat/renovate-config',
-    'local>literat/renovate-config:scheduleEveryTwoWeeksNonOfficeHours',
-    ':dependencyDashboard',
+    "local>literat/renovate-config",
+    "local>literat/renovate-config:scheduleEveryTwoWeeksNonOfficeHours",
+    ":dependencyDashboard",
   ],
-  commitMessagePrefix: 'chore(deps): ',
+  commitMessagePrefix: "chore(deps): ",
   packageRules: [
     {
-      groupName: 'monorepo:react non-major',
-      groupSlug: 'monorepo-react-non-major',
-      matchPackagePatterns: ['^react'],
-      matchUpdateTypes: ['minor', 'patch'],
+      groupName: "monorepo:react non-major",
+      groupSlug: "monorepo-react-non-major",
+      matchUpdateTypes: ["minor", "patch"],
+      matchPackageNames: ["/^react/"],
     },
   ],
 }
