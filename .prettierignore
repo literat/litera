@@ -59,3 +59,6 @@ CODEOWNERS
 # Version file
 .node-version
 .nvmrc
+
+# Next.js generated file, formatting is not user-controlled
+next-env.d.ts

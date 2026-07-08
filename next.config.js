@@ -1,5 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  /**
+   * Explicitly pin the workspace root to this project directory
+   *
+   * @see { @link https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory }
+   */
+  turbopack: {
+    root: __dirname,
+  },
   experimental: {
     serverActions: {
       /**
@@ -9,13 +17,13 @@ const nextConfig = {
        */
       bodySizeLimit: '2mb',
     },
-    /**
-     * Enable statically typed links
-     *
-     * @see { @link https://nextjs.org/docs/app/api-reference/config/typescript#statically-typed-links }
-     */
-    typedRoutes: true,
   },
+  /**
+   * Enable statically typed links
+   *
+   * @see { @link https://nextjs.org/docs/app/api-reference/config/typescript#statically-typed-links }
+   */
+  typedRoutes: true,
   reactStrictMode: true,
   sassOptions: {
     implementation: 'sass-embedded',
