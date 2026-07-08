@@ -3,6 +3,7 @@
   extends: [
     "local>literat/renovate-config",
     "local>literat/renovate-config:scheduleEveryTwoWeeksNonOfficeHours",
+    ":pinAllExceptPeerDependencies",
     ":dependencyDashboard",
   ],
   commitMessagePrefix: "chore(deps): ",
