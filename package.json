@@ -58,7 +58,7 @@
     "prettier-plugin-toml": "2.0.6",
     "prisma": "5.22.0",
     "sass-embedded": "1.100.0",
-    "textlint": "14.8.4",
+    "textlint": "15.7.1",
     "tsx": "4.22.4",
     "vercel": "37.7.1"
   },
