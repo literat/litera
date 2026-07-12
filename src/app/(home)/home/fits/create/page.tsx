@@ -1,4 +1,4 @@
-import { CreateFit } from '@local/features/fits/CreateFit';
+import { CreateFit } from '@local/features/fits/ui';
 
 export default async function CreateFitPage() {
   return (
