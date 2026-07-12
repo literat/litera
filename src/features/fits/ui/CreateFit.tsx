@@ -1,7 +1,7 @@
 'use client';
 
 import { Form } from '@local/components/Form';
-import { createFitAction } from './actions';
+import { createFitAction } from '../actions/createFit';
 import { useRouter } from 'next/navigation';
 import React, { useActionState } from 'react';
 
