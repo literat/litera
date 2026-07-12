@@ -30,22 +30,22 @@ yarn prisma db seed       # seed the database
 
 Note: `.yarnrc.yml` sets `enableScripts: false` and a 7-day minimum-age gate on new packages.
 
-## Before finishing a change
+## Before Finishing a Change
 
-Run these and make sure they pass (CI enforces a clean working tree after `prisma generate` + `build`):
+Run `yarn test` and make sure it passes — it runs linting, format checking, and type-checking:
 
 ```bash
-yarn types && yarn lint && yarn build
+yarn test
 ```
 
 If you touch the Prisma schema, run `yarn prisma generate` and commit the result.
 
 ## Conventions
 
-- **Imports:** use the `@local/*` path alias for `src/*` (e.g. `import { Inner } from '@local/ui/Inner'`).
+- **Imports:** use the `@local/*` path alias for `src/*` (for example, `import { Inner } from '@local/ui/Inner'`).
 - **Components:** one folder per component with `Component.tsx`, `Component.module.scss`, and an `index.ts` barrel that re-exports it.
 - **App Router:** routes live in `src/app` and use route groups (`(home)`, `(homepage)`). Server Components by default; add `'use client'` only when needed. Typed routes (`typedRoutes`) are enabled.
-- **Server Actions:** feature-level mutations are `'use server'` files under a feature's `actions/` folder (see below).
+- **Server Actions:** feature-level mutations are `'use server'` files under a feature’s `actions/` folder (see below).
 - **Commits:** Conventional Commits (enforced by commitlint on a Husky hook).
 
 ## Layout
