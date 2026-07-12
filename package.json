@@ -41,7 +41,7 @@
     "zod": "3.23.8"
   },
   "devDependencies": {
-    "@commitlint/cli": "19.8.1",
+    "@commitlint/cli": "21.2.0",
     "@commitlint/config-conventional": "21.2.0",
     "@faker-js/faker": "8.4.1",
     "@lmc-eu/prettier-config": "2.0.1",
