@@ -60,7 +60,7 @@
     "sass-embedded": "1.100.0",
     "textlint": "15.7.1",
     "tsx": "4.22.4",
-    "vercel": "37.7.1"
+    "vercel": "37.14.0"
   },
   "dependenciesMeta": {
     "bcrypt": {
