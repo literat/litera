@@ -38,7 +38,7 @@
     "react-dom": "19.2.7",
     "sass": "1.101.0",
     "typescript": "5.9.3",
-    "zod": "3.23.8"
+    "zod": "3.25.76"
   },
   "devDependencies": {
     "@commitlint/cli": "21.2.0",
