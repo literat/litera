@@ -10,7 +10,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "npm-run-all --serial lint",
+    "test": "npm-run-all --serial lint format:check types",
     "lint": "npm-run-all --serial lint:scripts lint:text",
     "lint:commit": "yarn commitlint --verbose --color --from $(git merge-base origin/main HEAD)",
     "lint:scripts": "eslint .",
