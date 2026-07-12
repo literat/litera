@@ -62,3 +62,6 @@ CODEOWNERS
 
 # Next.js generated file, formatting is not user-controlled
 next-env.d.ts
+
+# Renovate config, formatted by Renovate itself
+.renovaterc.json5
