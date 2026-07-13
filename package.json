@@ -43,7 +43,7 @@
   "devDependencies": {
     "@commitlint/cli": "21.2.0",
     "@commitlint/config-conventional": "21.2.0",
-    "@faker-js/faker": "8.4.1",
+    "@faker-js/faker": "10.5.0",
     "@lmc-eu/prettier-config": "2.0.1",
     "@lmc-eu/textlint-rule-preset-lmc": "2.0.2",
     "@types/bcrypt": "5.0.2",
