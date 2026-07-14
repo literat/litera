@@ -1,0 +1,46 @@
+name: 🔄 Continuous Integration
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  git-checks:
+    name: 🚦 Git Checks
+    if: github.event_name == 'pull_request'
+    uses: ./.github/workflows/git.yaml
+
+  build-checks:
+    name: 🏗️ Build Checks
+    uses: ./.github/workflows/build.yaml
+
+  code-quality-checks:
+    name: 🔍 Code Quality Checks
+    uses: ./.github/workflows/lint.yaml
+
+  code-quality-gate:
+    name: 📊 Code Quality Gate
+    needs: [code-quality-checks]
+    if: always()
+    uses: ./.github/workflows/gate.yaml
+    with:
+      needs-context: ${{ toJSON(needs) }}
+      gate-name: '📊 Code Quality Gate'
+
+  ready-to-integrate:
+    name: 🚢 Ready to Integrate
+    needs: [git-checks, build-checks, code-quality-gate]
+    if: always()
+    uses: ./.github/workflows/gate.yaml
+    with:
+      needs-context: ${{ toJSON(needs) }}
+      gate-name: '🚢 Ready to Integrate'

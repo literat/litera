@@ -1,10 +1,7 @@
-name: 🏗️ Build
+name: 🏗️ Build Checks
 
 on:
-  # Run this workflow on push to branches only (not tags)
-  push:
-    branches:
-      - '**'
+  workflow_call:
 
 jobs:
   build:
@@ -29,6 +26,8 @@ jobs:
         run: yarn prisma generate
 
       - name: Build packages
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
         run: yarn build
 
       - name: Check for clean working directory

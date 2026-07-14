@@ -1,0 +1,44 @@
+name: 🔍 Code Quality Checks
+
+on:
+  workflow_call:
+
+jobs:
+  lint:
+    name: 📐 Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Setup Node and Install Dependencies
+        uses: ./.github/actions/setup-install
+
+      - name: Lint
+        run: yarn lint
+
+  format:
+    name: 💅 Code Format
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Setup Node and Install Dependencies
+        uses: ./.github/actions/setup-install
+
+      - name: Check Code-Style Format
+        run: yarn format:check
+
+  types:
+    name: 📘 Types
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Setup Node and Install Dependencies
+        uses: ./.github/actions/setup-install
+
+      - name: Generate Prisma Client
+        run: yarn prisma generate
+
+      - name: Types Check
+        run: yarn types
