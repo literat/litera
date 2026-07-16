@@ -1729,15 +1729,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/client@npm:5.22.0":
-  version: 5.22.0
-  resolution: "@prisma/client@npm:5.22.0"
+"@prisma/client-runtime-utils@npm:7.8.0":
+  version: 7.8.0
+  resolution: "@prisma/client-runtime-utils@npm:7.8.0"
+  checksum: 10/759a02392f562a4118991dcd5a68393a6e26e1881b28bf01082e05751b84d27790a3cbd550bc317da617af97746432d411a6138268b45676696b18a264a5f2a7
+  languageName: node
+  linkType: hard
+
+"@prisma/client@npm:7.8.0":
+  version: 7.8.0
+  resolution: "@prisma/client@npm:7.8.0"
+  dependencies:
+    "@prisma/client-runtime-utils": "npm:7.8.0"
   peerDependencies:
     prisma: "*"
+    typescript: ">=5.4.0"
   peerDependenciesMeta:
     prisma:
       optional: true
-  checksum: 10/991d7410ded2d6c824303ac222ae94df4f1bf42240dda97c710cfee3a3bc59fef65c73e1ee55177e38d12f4d7dfc0a047748f98b4e3026dddd65f462684cd2d1
+    typescript:
+      optional: true
+  checksum: 10/2fd38335ec789e7f27b9c28b0c5dbe78e43a44f7288a08e8562517b63d35e43082639a8bf96939013a959d651b3955a33575312fc3670a202d3b81a4448ce7b4
   languageName: node
   linkType: hard
 
@@ -8354,7 +8366,7 @@ __metadata:
     "@lmc-eu/prettier-config": "npm:2.0.1"
     "@lmc-eu/textlint-rule-preset-lmc": "npm:2.0.2"
     "@next-auth/prisma-adapter": "npm:1.0.7"
-    "@prisma/client": "npm:5.22.0"
+    "@prisma/client": "npm:7.8.0"
     "@testing-library/dom": "npm:10.4.1"
     "@testing-library/jest-dom": "npm:6.9.1"
     "@testing-library/react": "npm:16.3.2"
