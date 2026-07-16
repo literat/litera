@@ -1,12 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
   /**
    * Explicitly pin the workspace root to this project directory
    *
    * @see { @link https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory }
    */
   turbopack: {
-    root: __dirname,
+    root: import.meta.dirname,
   },
   experimental: {
     serverActions: {
@@ -41,10 +42,10 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'res.cloudinary.com',
-        pathname: '/literat/**'
+        pathname: '/literat/**',
       },
     ],
   },
-}
+};
 
-module.exports = nextConfig
+export default nextConfig;
