@@ -27,9 +27,13 @@ jobs:
     name: 🔍 Code Quality Checks
     uses: ./.github/workflows/lint.yaml
 
+  tests:
+    name: 🧪 Tests
+    uses: ./.github/workflows/test.yaml
+
   code-quality-gate:
     name: 📊 Code Quality Gate
-    needs: [code-quality-checks]
+    needs: [code-quality-checks, tests]
     if: always()
     uses: ./.github/workflows/gate.yaml
     with:

@@ -1,0 +1,25 @@
+name: 🧪 Tests
+
+on:
+  workflow_call:
+
+jobs:
+  unit-tests:
+    name: 🧪 Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Setup Node and Install Dependencies
+        uses: ./.github/actions/setup-install
+
+      - name: Unit Tests
+        run: yarn test:unit:coverage
+
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        if: always()
+        with:
+          name: coverage-report
+          path: .coverage/
+          retention-days: 7
