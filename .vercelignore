@@ -1,0 +1,4 @@
+**/__tests__/**
+vitest.config.mts
+vitest.setup.ts
+.coverage/
