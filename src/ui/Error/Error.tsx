@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Error.module.scss';
+import { Callout } from '@radix-ui/themes';
 
 export default function Error({ error }: { error: string }) {
   if (!error) {
@@ -7,11 +7,10 @@ export default function Error({ error }: { error: string }) {
   }
 
   return (
-    <div className={styles.Error}>
-      <p>
-        <strong>Shoot!</strong>
-        {error}
-      </p>
-    </div>
+    <Callout.Root color="red" variant="soft">
+      <Callout.Text>
+        <strong>Shoot!</strong> {error}
+      </Callout.Text>
+    </Callout.Root>
   );
 }

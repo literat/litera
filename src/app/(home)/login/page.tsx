@@ -1,5 +1,5 @@
-import { Columns } from '@local/ui/Columns';
 import LoginForm from '@local/features/auth/ui/LoginForm';
+import { Grid } from '@radix-ui/themes';
 import { Metadata } from 'next';
 import React from 'react';
 
@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 export default function Login() {
   return (
     <main>
-      <Columns>
+      <Grid columns={{ initial: '1', sm: '2' }} gap="5">
         {/* <Signup /> */}
         <LoginForm />
         {/* <RequestReset /> */}
-      </Columns>
+      </Grid>
     </main>
   );
 }

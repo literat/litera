@@ -1,6 +1,10 @@
 import React, { ReactNode } from 'react';
-import styles from './Inner.module.scss';
+import { Container } from '@radix-ui/themes';
 
 export default function Inner({ children }: { children: ReactNode }) {
-  return <div className={styles.inner}>{children}</div>;
+  return (
+    <Container size="3" py="6">
+      {children}
+    </Container>
+  );
 }

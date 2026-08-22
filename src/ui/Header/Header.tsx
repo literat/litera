@@ -1,13 +1,14 @@
 import React from 'react';
-import styles from './Header.module.scss';
+import { Flex, Separator } from '@radix-ui/themes';
 import { Navigation } from '@local/ui/Navigation';
 
 export default function Header() {
   return (
     <header>
-      <div className={styles.bar}>
+      <Flex justify="end" align="stretch" wrap="wrap" py="4" px="5">
         <Navigation />
-      </div>
+      </Flex>
+      <Separator size="4" />
     </header>
   );
 }
