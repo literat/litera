@@ -1,7 +1,14 @@
+'use client';
+
 import React from 'react';
-import { signOut } from '@local/features/auth/services/authService';
+import { Button } from '@radix-ui/themes';
+import { ExitIcon } from '@radix-ui/react-icons';
 import { logout } from '../actions/logout';
 
 export default function Logout() {
-  return <button onClick={logout}>Sign Out</button>;
+  return (
+    <Button type="button" variant="ghost" size="3" onClick={logout}>
+      <ExitIcon /> Sign Out
+    </Button>
+  );
 }
