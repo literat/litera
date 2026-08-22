@@ -1739,15 +1739,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/client@npm:5.22.0":
-  version: 5.22.0
-  resolution: "@prisma/client@npm:5.22.0"
+"@prisma/client-runtime-utils@npm:7.9.1":
+  version: 7.9.1
+  resolution: "@prisma/client-runtime-utils@npm:7.9.1"
+  checksum: 10/2b6f92a3533ee618e1d8259f957a1521d69dfb3d690845bca526f51dec5886e1e6a40e9271cc5eb50c9786a6472b988c5829f698ba29df0479ca96420f1cffc2
+  languageName: node
+  linkType: hard
+
+"@prisma/client@npm:7.9.1":
+  version: 7.9.1
+  resolution: "@prisma/client@npm:7.9.1"
+  dependencies:
+    "@prisma/client-runtime-utils": "npm:7.9.1"
   peerDependencies:
     prisma: "*"
+    typescript: ">=5.4.0"
   peerDependenciesMeta:
     prisma:
       optional: true
-  checksum: 10/991d7410ded2d6c824303ac222ae94df4f1bf42240dda97c710cfee3a3bc59fef65c73e1ee55177e38d12f4d7dfc0a047748f98b4e3026dddd65f462684cd2d1
+    typescript:
+      optional: true
+  checksum: 10/0099ff02c88dc28710aa8a140925dad0842a7118b06938972aeb7e5d4fa41e0760f6d94d21b195dde85bfcae9c5a240b9d603e2f7e8ae2d40fcf689cd06e1df5
   languageName: node
   linkType: hard
 
