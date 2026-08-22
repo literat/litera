@@ -1,11 +1,11 @@
 .FitPriceTag {
-  background: var(--red);
+  background: var(--gray-12);
   transform: rotate(3deg);
-  color: white;
+  color: var(--gray-1);
   font-weight: 600;
-  padding: 5px;
+  padding: var(--space-1);
   line-height: 1;
-  font-size: 3rem;
+  font-size: var(--font-size-5);
   display: inline-block;
   position: absolute;
   top: -3px;
