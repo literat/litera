@@ -79,9 +79,5 @@
       "built": true
     }
   },
-  "packageManager": "yarn@4.17.0",
-  "prisma": {
-    "schema": "src/database/schema.prisma",
-    "seed": "tsx src/database/seed.ts"
-  }
+  "packageManager": "yarn@4.17.0"
 }
