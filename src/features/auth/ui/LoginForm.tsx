@@ -5,6 +5,7 @@ import { Error } from '@local/ui/Error';
 import React, { useActionState } from 'react';
 import { authenticate } from '@local/features/auth/actions/authenticate';
 import { useFormStatus } from 'react-dom';
+import { Button, Flex, Heading, Text, TextField } from '@radix-ui/themes';
 
 export default function LoginForm() {
   const [errorMessage, formAction, isPending] = useActionState(
@@ -14,30 +15,40 @@ export default function LoginForm() {
 
   return (
     <Form action={formAction}>
-      <fieldset disabled={isPending} aria-busy={isPending}>
-        <h2>Sign into your account</h2>
-        {errorMessage && <Error error={errorMessage} />}
-        <label htmlFor="email">
-          Email
-          <input
-            type="email"
-            name="email"
-            placeholder="email"
-            autoComplete="email"
-          />
-        </label>
-        <label htmlFor="password">
-          Password
-          <input
-            type="password"
-            name="password"
-            placeholder="password"
-            autoComplete="new-password"
-          />
-        </label>
+      <Flex asChild direction="column" gap="3">
+        <fieldset disabled={isPending} aria-busy={isPending}>
+          <Heading as="h2" size="5">
+            Sign into your account
+          </Heading>
+          {errorMessage && <Error error={errorMessage} />}
+          <label htmlFor="email">
+            <Text as="div" size="2" weight="bold" mb="1">
+              Email
+            </Text>
+            <TextField.Root
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email"
+              autoComplete="email"
+            />
+          </label>
+          <label htmlFor="password">
+            <Text as="div" size="2" weight="bold" mb="1">
+              Password
+            </Text>
+            <TextField.Root
+              type="password"
+              id="password"
+              name="password"
+              placeholder="password"
+              autoComplete="new-password"
+            />
+          </label>
 
-        <LoginButton />
-      </fieldset>
+          <LoginButton />
+        </fieldset>
+      </Flex>
     </Form>
   );
 }
@@ -46,8 +57,8 @@ function LoginButton() {
   const { pending } = useFormStatus();
 
   return (
-    <button type="submit" aria-disabled={pending}>
+    <Button type="submit" aria-disabled={pending} loading={pending}>
       Sign In!
-    </button>
+    </Button>
   );
 }

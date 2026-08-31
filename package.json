@@ -29,6 +29,8 @@
   "dependencies": {
     "@prisma/adapter-pg": "catalog:database",
     "@prisma/client": "catalog:database",
+    "@radix-ui/react-icons": "catalog:frontend",
+    "@radix-ui/themes": "catalog:frontend",
     "bcrypt": "catalog:auth",
     "cloudinary": "catalog:media",
     "eslint": "catalog:linting",
@@ -36,6 +38,7 @@
     "next": "catalog:frontend",
     "next-auth": "catalog:auth",
     "next-cloudinary": "catalog:media",
+    "next-themes": "catalog:frontend",
     "pg": "catalog:database",
     "react": "catalog:frontend",
     "react-dom": "catalog:frontend",
